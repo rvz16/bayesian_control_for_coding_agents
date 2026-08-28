@@ -158,7 +158,17 @@ Utility for a policy π is `U(π) = R·Y_T − Σ_t C(a_t)` with `R=100`.
 
 ## Citation
 
-If you use this code in your research, please cite the paper.
+If you use this code in your research, please cite:
+
+```bibtex
+@article{papamarkou2026bayesian,
+  title   = {Bayesian Control for Coding Agents},
+  author  = {Papamarkou, Theodore and Smirnov, Vladislav and Mazanov, Viktor and
+             Vazhentsev, Artem and Nakov, Preslav and Baldwin, Timothy and
+             Shelmanov, Artem},
+  year    = {2026}
+}
+```
 
 ## License
 

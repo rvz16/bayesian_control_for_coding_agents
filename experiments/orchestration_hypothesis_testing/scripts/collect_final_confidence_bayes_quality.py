@@ -58,7 +58,7 @@ def _configure_writable_hf_cache() -> None:
     force = os.environ.get("ORCH_FORCE_HF_CACHE", "") == "1"
     for name, path in paths.items():
         current = os.environ.get(name, "")
-        if force or not current or current.startswith("/mnt/data"):
+        if force or not current:
             os.environ[name] = str(path)
         Path(os.environ[name]).expanduser().mkdir(parents=True, exist_ok=True)
 
