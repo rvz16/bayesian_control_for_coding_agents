@@ -1,4 +1,14 @@
-# Bayesian Control for Coding Agents
+<div align="center">
+  <h1>Bayesian Control for Coding Agents</h1>
+</div>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.24453-b31b1b.svg)](https://arxiv.org/abs/2606.24453)
+
+[Setup](#setup) | [Reproducing the paper](#reproducing-the-paper) | [Models & benchmarks](#models-and-benchmarks) | [Baseline policies](#baseline-policies) | [Citation](#citation)
+
+---
 
 Code release for the paper **"Bayesian Control for Coding Agents"**.
 
