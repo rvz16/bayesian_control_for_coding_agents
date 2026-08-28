@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Experiment outputs
+data/
+sim_results/
+results/
+logs/
+reports/
+figures/
+outputs/
+wandb/
+.wandb/
+*.log
+
+# Caches (HuggingFace, Docker, etc.)
+.cache/
+.hf_cache/
+
+# Notebooks (should not be committed for camera-ready)
+*.ipynb
+.ipynb_checkpoints/
+
+# Backups
+*.bak
+*.orig

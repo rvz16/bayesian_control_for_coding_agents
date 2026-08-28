@@ -1,0 +1,45 @@
+policies:
+  bayes:
+    type: bayes_controller
+    description: "Bayesian decision-theoretic controller"
+    belief_grid_resolution: 0.01
+    max_budget: 10
+
+  h1_one_shot:
+    type: heuristic
+    description: "Direct fix once, then full verify"
+    generator_arm: g1_direct_fix
+
+  h2_fixed_workflow:
+    type: heuristic
+    description: "trigger_tests -> localized_fix -> full verify"
+    steps:
+      - action: critic
+        critic: trigger_tests
+      - action: generate
+        arm: g2_localized_fix
+      - action: verify
+
+  h3_two_stage_fixed:
+    type: heuristic
+    description: "direct_fix -> trigger_tests -> if fail then test_guided_fix -> verify"
+    steps:
+      - action: generate
+        arm: g1_direct_fix
+      - action: critic
+        critic: trigger_tests
+      - action: conditional_generate
+        condition: critic_fail
+        arm: g3_test_guided_fix
+      - action: verify
+
+  h4_threshold:
+    type: heuristic
+    description: "Hand-built threshold policy"
+    verify_threshold: 0.8
+    regenerate_threshold: 0.3
+
+  h5_single_critic_then_map:
+    type: heuristic
+    description: "One cheap critic, choose best generator, then verify"
+    critic: smoke_tests

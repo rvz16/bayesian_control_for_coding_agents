@@ -1,0 +1,27 @@
+benchmark: synthetic
+description: "Paper's synthetic bug-fixing benchmark"
+
+hidden_classes: ["A", "B", "C"]
+prior: [0.3333333333333333, 0.3333333333333333, 0.3333333333333334]
+
+diagnostics:
+  T1:
+    fail_probs: {A: 0.9, B: 0.2, C: 0.2}
+  T2:
+    fail_probs: {A: 0.2, B: 0.9, C: 0.2}
+  T3:
+    fail_probs: {A: 0.2, B: 0.2, C: 0.9}
+
+patches: ["PA", "PB", "PC"]
+# patch PA succeeds iff H=A, etc.
+
+max_diagnostics: 2
+
+costs:
+  test: 1
+  patch: 3
+  verifier: 20
+  reward: 200
+
+default_episodes: 100000
+default_seed: 7

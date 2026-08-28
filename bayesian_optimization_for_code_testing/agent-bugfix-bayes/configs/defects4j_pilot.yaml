@@ -1,0 +1,33 @@
+benchmark: defects4j
+description: "Defects4J pilot study (optional, after BugsInPy is stable)"
+
+defects4j_path: "${DEFECTS4J_PATH}"
+
+projects:
+  - name: Chart
+    bug_ids: [1, 2, 3, 4, 5]
+  - name: Lang
+    bug_ids: [1, 2, 3, 4, 5]
+
+generator_arms:
+  - g1_direct_fix
+  - g2_localized_fix
+  - g3_test_guided_fix
+  - g4_minimal_diff_fix
+
+seeds_per_arm: 3
+max_depth: 1
+
+candidate_bank_dir: "data/candidate_bank/defects4j"
+
+splits:
+  train_ratio: 0.5
+  val_ratio: 0.25
+  test_ratio: 0.25
+  stratify_by_repo: true
+
+costs:
+  test: 1
+  patch: 3
+  verifier: 20
+  reward: 200

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayesian_control_coding_agents"
+version = "1.0.0"
+description = "Bayesian Control for Coding Agents — code release"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = []
+
+[project.urls]
+Homepage = "https://github.com"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "experiments*",
+    "bayesian_optimization_for_code_testing*",
+    "sage_agent*",
+    "different_agents*",
+]
+exclude = ["tests*", "data*", "logs*", "sim_results*"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "experiments/orchestration_hypothesis_testing/tests",
+    "bayesian_optimization_for_code_testing/agent-bugfix-bayes/tests",
+]
+python_files = ["test_*.py"]

@@ -1,0 +1,92 @@
+{
+  "calibrated": {
+    "aggregation_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "context_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "dedup_search_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "filtering_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "lineno_format_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "parsing_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "score_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "time_merge_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    }
+  },
+  "hand_tuned": {
+    "parsing_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.85
+    },
+    "filtering_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    },
+    "aggregation_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.55
+    },
+    "context_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.6
+    },
+    "score_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.55
+    },
+    "dedup_search_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.65
+    },
+    "time_merge_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.6
+    },
+    "lineno_format_check": {
+      "p_pass_y1": 0.95,
+      "p_pass_y0": 0.5
+    }
+  },
+  "train_bugs": [
+    "bug_r23",
+    "bug_r25",
+    "bug_r21",
+    "bug_r35",
+    "bug_r38",
+    "bug_r31",
+    "bug_r50",
+    "bug_r44",
+    "bug_r17"
+  ],
+  "test_bugs": [
+    "bug_r22",
+    "bug_r30",
+    "bug_r26",
+    "bug_r14",
+    "bug_r40",
+    "bug_r15",
+    "bug_r48",
+    "bug_r41",
+    "bug_r7"
+  ]
+}

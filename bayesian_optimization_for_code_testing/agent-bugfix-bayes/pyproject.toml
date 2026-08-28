@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-bugfix-bayes"
+version = "0.1.0"
+description = "Bayesian decision-theoretic orchestration for agent-driven bug fixing"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.25",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "matplotlib>=3.7",
+    "pydantic>=2.0",
+    "typer>=0.9",
+    "pyyaml>=6.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4",
+    "allure-pytest>=2.13",
+]
+dev = [
+    "joblib>=1.3",
+]
+
+[project.scripts]
+abbo = "abbo.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"

@@ -1,0 +1,19 @@
+benchmark: toy
+description: "Toy executable codebase benchmark preserving synthetic information structure"
+
+target_fail_matrix:
+  T1: {A: 0.9, B: 0.2, C: 0.2}
+  T2: {A: 0.2, B: 0.9, C: 0.2}
+  T3: {A: 0.2, B: 0.2, C: 0.9}
+
+max_diagnostics: 2
+
+costs:
+  test: 1
+  patch: 3
+  verifier: 20
+  reward: 200
+
+default_episodes: 10000
+default_seed: 7
+calibration_trials: 10000

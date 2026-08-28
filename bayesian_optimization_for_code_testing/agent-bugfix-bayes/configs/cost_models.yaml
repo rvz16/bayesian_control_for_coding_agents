@@ -1,0 +1,31 @@
+cost_models:
+  default:
+    description: "Wall-clock time based costs"
+    unit: "seconds"
+    costs:
+      test: 1.0
+      patch: 3.0
+      verifier: 20.0
+      reward: 200.0
+
+  api_dollar:
+    description: "API dollar cost model"
+    unit: "USD"
+    costs:
+      test: 0.001
+      patch: 0.05
+      verifier: 0.10
+      reward: 1.00
+
+  normalized:
+    description: "Normalized costs (verifier = 1.0)"
+    unit: "normalized"
+    costs:
+      test: 0.05
+      patch: 0.15
+      verifier: 1.0
+      reward: 10.0
+
+utility:
+  primary: "reward_success * indicator(full_suite_pass) - measured_generator_costs - measured_critic_costs - measured_verifier_costs"
+  alternative_with_api_cost: "primary - api_dollar_cost"
