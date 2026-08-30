@@ -9,10 +9,29 @@ description = "Bayesian Control for Coding Agents — code release"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
-authors = []
+authors = [
+    { name = "Theodore Papamarkou" },
+    { name = "Vladislav Smirnov" },
+    { name = "Viktor Mazanov" },
+    { name = "Artem Vazhentsev" },
+    { name = "Preslav Nakov" },
+    { name = "Timothy Baldwin" },
+    { name = "Artem Shelmanov" },
+]
+keywords = [
+    "bayesian-control",
+    "coding-agents",
+    "llm-orchestration",
+    "uncertainty-quantification",
+    "pomdp",
+    "swe-bench",
+    "livecodebench",
+]
 
 [project.urls]
-Homepage = "https://github.com"
+Homepage = "https://github.com/rvz16/bayesian_control_for_coding_agents"
+Repository = "https://github.com/rvz16/bayesian_control_for_coding_agents"
+Paper = "https://arxiv.org/abs/2606.24453"
 
 [tool.setuptools.packages.find]
 where = ["."]

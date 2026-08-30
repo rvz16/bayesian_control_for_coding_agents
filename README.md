@@ -31,13 +31,17 @@ experiments/orchestration_hypothesis_testing/
     iter/            Self-Refine, Reflexion, and Bayesian iterative refinement
     scripts/         entry points:
                        spot_check_generators.py — single-shot calibration draws
-                       run_fitted_live.py       — online policy evaluation
+                       run_fitted_live.py       — online Bayesian policy
+                                                  evaluation (greedy/DP)
                        run_sage_baseline.py     — SAGE self-consistency baseline
                        score_sage_uhead.py      — post-hoc SAGE uncertainty
                        bootstrap_lcb_uq_prr_table.py  — Table 1 (PRR)
                        experiment2_uq_bayes_critic.py — critic-belief evaluation
                        aggregate_trajectory_uq.py     — DeepSeek/OpenRouter logprobs
                        fitted_live/             — live-policy adapters
+    iter/replay_baselines.py  — cached-artifact replay of stateless baselines
+                                (always_verify, best_of_N, gate(Cr_*),
+                                 fixed_pipeline, self_refine, reflexion)
     analysis/        controller, regime-map sweeps, sensitivity, bootstrap CI
     tools/, paper/, tests/
 
@@ -91,7 +95,7 @@ python experiments/orchestration_hypothesis_testing/scripts/spot_check_generator
 
 Datasets: `princeton-nlp/SWE-bench_Lite`, `princeton-nlp/SWE-bench_Verified`,
 `livecodebench/code_generation_lite`, `evalplus/mbppplus`,
-`evalplus/humanevalplus`, `Muennighoff/humanevalpack`,
+`evalplus/humanevalplus`, `bigcode/humanevalpack`,
 `deepmind/code_contests`.
 
 Generators (from `_common/generators.py`): `gpt5_mini`, `qwen3_coder`,
@@ -105,19 +109,47 @@ evaluation.
 
 ```bash
 python experiments/orchestration_hypothesis_testing/calibration/from_spotcheck.py \
-    --data-dir data/<benchmark>_calibration \
+    --output-dir data/<benchmark>_calibration \
     --generators <gen1,gen2,...> \
-    --dataset <benchmark_name>
+    --dataset <benchmark_name> \
+    --max-cost-usd-per-model 5
 ```
+
+`--output-dir` points at the calibration draws produced in step 1;
+`from_spotcheck.py` reads the pre-generated patches, runs the syntax/public-test
+/LLM critics, and writes the prior, critic likelihoods, and transition kernel
+under the same directory. Use `--skip-l3` to skip the LLM critic.
 
 ### 3. Evaluate policies
 
-Replay the ten policies (see paper Table 7) over the 25% held-out split:
+**Bayesian controllers** (`bayesian_greedy`, `bayesian_DP`) — evaluate online
+on the 25% held-out split with the calibrated prior/likelihoods/kernel:
 
 ```bash
 python experiments/orchestration_hypothesis_testing/scripts/run_fitted_live.py \
-    --config configs/<benchmark>_<generator>.yaml
+    --benchmark <benchmark_name> \
+    --generators <gen1,gen2,...> \
+    --policies greedy_fitted,dp_fitted \
+    --calibration-dir data/<benchmark>_calibration \
+    --output-dir data/<benchmark>_fitted_live \
+    --c-gen 10 --c-l0 1 --c-l2 2 --c-l3 5 --c-ver 30 --reward 100
 ```
+
+**Baseline policies** (`always_verify`, `best_of_N`, `gate(Cr_*)`,
+`fixed_pipeline`, `self_refine`, `reflexion`) — cached-artifact replay over
+the same held-out split:
+
+```bash
+python experiments/orchestration_hypothesis_testing/iter/replay_baselines.py \
+    --calibration-dir data/<benchmark>_calibration \
+    --generators <gen1,gen2,...>
+```
+
+> **Evaluator caps disclosure.** `run_fitted_live.py` defaults to
+> `--lcb-private-test-cap 12` (LiveCodeBench uses the first 12 private tests
+> per problem) and `--plus-input-cap 200` (EvalPlus HumanEval+/MBPP+ use the
+> first 200 PLUS inputs). Override at the command line if you want the full
+> hidden suites.
 
 ### Additional experiments
 
@@ -151,9 +183,9 @@ Six generators (see Appendix A.1 of the paper):
 Nine benchmarks (see Appendix A.2):
 
 - Function-level synthesis: LCB-hard (102), LCB-medium (207), LCB-easy (135),
-  MBPP+ (378), HumanEval+ (164)
+  MBPP+ (378), HumanEval+ (164), CodeContests (165)
 - Repository-level patch generation: SWE-Bench Lite (300), SWE-Bench Verified (500)
-- Bug-fixing: HumanEvalFix (164), CodeContests (165)
+- Bug-fixing: HumanEvalFix (164)
 
 ## Baseline policies
 
