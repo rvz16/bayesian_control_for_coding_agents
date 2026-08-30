@@ -75,97 +75,201 @@ Copy `.env.example` (if provided) to `.env` and fill in the keys.
 
 ## Reproducing the paper
 
-The full pipeline runs in three stages: **generate → calibrate → evaluate**.
+All commands assume you `cd experiments/orchestration_hypothesis_testing/` first.
 
-### 1. Generate calibration candidates
+### Prerequisites
 
-For each `(benchmark, generator)` cell, draw `n=3` independent single-shot
-patches with a fixed seed:
+- **`.env`** at repo root with `OPENROUTER_API_KEY=sk-or-v1-...` (auto-loaded
+  by the entry scripts).
+- **Docker or Podman** for SWE-Bench Phase 2 (harness eval) on `x86_64`.
+  Podman users:
+  ```bash
+  export DOCKER_HOST="unix:///run/user/$(id -u)/podman/podman.sock"
+  export SWEBENCH_PODMAN_COMPAT=1
+  ```
+- **Local vLLM** endpoints for open-weight generators (optional): `qwen25_32b`
+  on port `8003`, `gpt_oss_20b` on the port you serve it on.
+
+### One-command reproduction — function-level synthesis + SWE-Bench
+
+The end-to-end launcher `scripts/run_all_fitted_live.sh` runs calibration
+followed by the fitted Bayesian controllers (`greedy_fitted`, `dp_fitted`)
+across all synthesis + SWE benchmarks:
 
 ```bash
-python experiments/orchestration_hypothesis_testing/scripts/spot_check_generators.py \
-    --dataset <benchmark_name> \
-    --generators <gen1,gen2,...> \
-    --n-instances <N> \
-    --n-patches 3 \
-    --seed 42 \
-    --output-dir data/<benchmark>_calibration \
-    --max-cost-usd-per-model 30
+cd experiments/orchestration_hypothesis_testing
+
+bash scripts/run_all_fitted_live.sh
+# environment knobs (all optional):
+#   TASKS=lcb_hard,lcb_medium,lcb_easy,mbpp,humaneval,swebench_lite,swebench_verified
+#   MODE=all|calibrate|live
+#   CALIB_N=100
+#   GEN_CAPS=qwen3_coder=4.0,haiku45=4.0,sonnet45=15.0,gpt5_mini=4.0
+#   LIVE_CAPS=qwen3_coder=20.0,haiku45=20.0,sonnet45=50.0,gpt5_mini=20.0
+#   USE_PODMAN=1
 ```
 
-Datasets: `princeton-nlp/SWE-bench_Lite`, `princeton-nlp/SWE-bench_Verified`,
-`livecodebench/code_generation_lite`, `evalplus/mbppplus`,
-`evalplus/humanevalplus`, `bigcode/humanevalpack`,
-`deepmind/code_contests`.
+### SWE-Bench full pipeline (Lite + Verified) — per generator
 
-Generators (from `_common/generators.py`): `gpt5_mini`, `qwen3_coder`,
-`haiku45`, `sonnet45`, `qwen25_32b`, `gpt_oss_20b`.
-
-### 2. Calibrate the Bayesian controllers
-
-Compute per-cell priors, critic likelihoods, and the refinement-transition
-kernel from the 75% calibration split; the disjoint 25% split is held out for
-evaluation.
+The 10-step pipeline used to produce the SWE-Bench cells in Table 7 (shown
+here for `qwen3_coder`; repeat with `--generators sonnet45`, `haiku45`,
+`gpt5_mini`):
 
 ```bash
-python experiments/orchestration_hypothesis_testing/calibration/from_spotcheck.py \
-    --output-dir data/<benchmark>_calibration \
-    --generators <gen1,gen2,...> \
-    --dataset <benchmark_name> \
-    --max-cost-usd-per-model 5
+cd experiments/orchestration_hypothesis_testing
+
+# 1. Calibration draws — SWE-Bench Lite (300 instances × 3 patches)
+python scripts/spot_check_generators.py \
+    --dataset princeton-nlp/SWE-bench_Lite \
+    --n-instances 300 --n-patches 3 \
+    --generators qwen3_coder \
+    --output-dir data/swebench_lite_calibration_full \
+    --max-cost-usd-per-model qwen3_coder=15
+
+# 2. Calibration draws — SWE-Bench Verified (500 instances × 3 patches)
+python scripts/spot_check_generators.py \
+    --dataset princeton-nlp/SWE-bench_Verified \
+    --n-instances 500 --n-patches 3 \
+    --generators qwen3_coder \
+    --output-dir data/swebench_verified_calibration_full \
+    --max-cost-usd-per-model qwen3_coder=25
+
+# 3. Self-Refine trajectory — Lite (5 refinement steps)
+python iter/refine_swe.py --method selfrefine \
+    --dataset princeton-nlp/SWE-bench_Lite \
+    --src-dir data/swebench_lite_calibration_full \
+    --output-dir data/swebench_lite_realbaselines_selfrefine_full \
+    --generators qwen3_coder \
+    --n-instances 300 --steps 5 --max-workers 1
+
+# 4. Evaluate SR trajectory — Lite
+python iter/eval_steps.py \
+    --gen qwen3_coder \
+    --data-dir data/swebench_lite_realbaselines_selfrefine_full \
+    --dataset princeton-nlp/SWE-bench_Lite \
+    --n-steps 5
+
+# 5-6. Self-Refine trajectory + eval — Verified (500 instances)
+python iter/refine_swe.py --method selfrefine \
+    --dataset princeton-nlp/SWE-bench_Verified \
+    --src-dir data/swebench_verified_calibration_full \
+    --output-dir data/swebench_verified_realbaselines_selfrefine_full \
+    --generators qwen3_coder \
+    --n-instances 500 --steps 5 --max-workers 1
+python iter/eval_steps.py \
+    --gen qwen3_coder \
+    --data-dir data/swebench_verified_realbaselines_selfrefine_full \
+    --dataset princeton-nlp/SWE-bench_Verified \
+    --n-steps 5
+
+# 7-8. Reflexion trajectory + eval — Lite
+python iter/refine_swe.py --method reflexion \
+    --dataset princeton-nlp/SWE-bench_Lite \
+    --src-dir data/swebench_lite_calibration_full \
+    --output-dir data/swebench_lite_realbaselines_reflexion_full \
+    --generators qwen3_coder \
+    --n-instances 300 --steps 5 --max-workers 1
+python iter/eval_steps.py \
+    --gen qwen3_coder \
+    --data-dir data/swebench_lite_realbaselines_reflexion_full \
+    --dataset princeton-nlp/SWE-bench_Lite \
+    --n-steps 5
+
+# 9-10. Reflexion trajectory + eval — Verified
+python iter/refine_swe.py --method reflexion \
+    --dataset princeton-nlp/SWE-bench_Verified \
+    --src-dir data/swebench_verified_calibration_full \
+    --output-dir data/swebench_verified_realbaselines_reflexion_full \
+    --generators qwen3_coder \
+    --n-instances 500 --steps 5 --max-workers 1
+python iter/eval_steps.py \
+    --gen qwen3_coder \
+    --data-dir data/swebench_verified_realbaselines_reflexion_full \
+    --dataset princeton-nlp/SWE-bench_Verified \
+    --n-steps 5
 ```
 
-`--output-dir` points at the calibration draws produced in step 1;
-`from_spotcheck.py` reads the pre-generated patches, runs the syntax/public-test
-/LLM critics, and writes the prior, critic likelihoods, and transition kernel
-under the same directory. Use `--skip-l3` to skip the LLM critic.
+The same 10 steps produce all SWE-Bench cells for the other generators —
+substitute `--generators sonnet45` (with a larger `--max-cost-usd-per-model`
+cap, e.g. `sonnet45=50`), `haiku45`, or `gpt5_mini`.
 
-### 3. Evaluate policies
+### Function-level synthesis pipeline (LCB, MBPP+, HumanEval+)
 
-**Bayesian controllers** (`bayesian_greedy`, `bayesian_DP`) — evaluate online
-on the 25% held-out split with the calibrated prior/likelihoods/kernel:
+Same three-phase shape (calibration draws → critic scoring → policy replay)
+but the oracle is a subprocess test runner, not the Docker harness:
 
 ```bash
-python experiments/orchestration_hypothesis_testing/scripts/run_fitted_live.py \
-    --benchmark <benchmark_name> \
-    --generators <gen1,gen2,...> \
+cd experiments/orchestration_hypothesis_testing
+
+# 1. Calibration draws (per benchmark)
+python scripts/spot_check_generators.py \
+    --dataset livecodebench/code_generation_lite \
+    --n-instances 200 --n-patches 3 \
+    --generators qwen3_coder,haiku45,sonnet45,gpt5_mini,qwen25_32b \
+    --output-dir data/lcb_calibration_full \
+    --max-cost-usd-per-model qwen3_coder=4,haiku45=4,sonnet45=15,gpt5_mini=4
+
+# 2. Critic scoring + likelihoods + transition kernel
+python calibration/from_spotcheck.py \
+    --output-dir data/lcb_calibration_full \
+    --generators qwen3_coder,haiku45,sonnet45,gpt5_mini,qwen25_32b \
+    --dataset livecodebench/code_generation_lite
+
+# 3. Bayesian controllers online (greedy_fitted, dp_fitted)
+python scripts/run_fitted_live.py \
+    --benchmark lcb_medium \
+    --generators qwen3_coder,haiku45,sonnet45,gpt5_mini,qwen25_32b \
     --policies greedy_fitted,dp_fitted \
-    --calibration-dir data/<benchmark>_calibration \
-    --output-dir data/<benchmark>_fitted_live \
-    --c-gen 10 --c-l0 1 --c-l2 2 --c-l3 5 --c-ver 30 --reward 100
+    --calibration-dir data/lcb_calibration_full \
+    --output-dir data/lcb_fitted_live
 ```
 
-**Baseline policies** (`always_verify`, `best_of_N`, `gate(Cr_*)`,
-`fixed_pipeline`, `self_refine`, `reflexion`) — cached-artifact replay over
-the same held-out split:
+Repeat with `--benchmark lcb_hard`, `lcb_easy`, `mbpp`, `humaneval` (see
+`run_all_fitted_live.sh` for the exhaustive loop).
+
+### Bug-fixing pipeline (HumanEvalFix)
+
+HumanEvalFix uses the same `iter/refine_swe.py` + `iter/eval_steps.py`
+pattern via `--dataset bigcode/humanevalpack`. CodeContests is handled by
+the ABBO pipeline in `bayesian_optimization_for_code_testing/agent-bugfix-bayes/`.
+
+### Uncertainty-quantification experiment (Table 1, Section 6.6)
 
 ```bash
-python experiments/orchestration_hypothesis_testing/iter/replay_baselines.py \
-    --calibration-dir data/<benchmark>_calibration \
-    --generators <gen1,gen2,...>
+cd experiments/orchestration_hypothesis_testing
+
+# Assumes a running OpenAI-compatible vLLM endpoint for gpt-oss-20b:
+#   GENERATOR_KEY=gpt_oss_20b_local
+#   GPT_OSS_20B_BASE_URL=http://127.0.0.1:8004/v1
+
+bash scripts/run_sage_uncertainty_experiments.sh
+# environment knobs:
+#   BENCHMARKS=lcb_hard,lcb_medium,...
+#   GENERATOR_KEY=gpt_oss_20b_local
+#   TRAIN_FRACTION=0.25
+#   PLUS_INPUT_CAP=200
 ```
 
-> **Evaluator caps disclosure.** `run_fitted_live.py` defaults to
-> `--lcb-private-test-cap 12` (LiveCodeBench uses the first 12 private tests
-> per problem) and `--plus-input-cap 200` (EvalPlus HumanEval+/MBPP+ use the
-> first 200 PLUS inputs). Override at the command line if you want the full
-> hidden suites.
+Aggregation into the PRR table:
 
-### Additional experiments
+```bash
+python scripts/bootstrap_lcb_uq_prr_table.py
+```
 
-- **SAGE uncertainty quantification** (paper Table 1 / Section 6.6):
+### Cost-regime sweep (Figure 4)
 
-  ```bash
-  python experiments/orchestration_hypothesis_testing/scripts/run_sage_baseline.py ...
-  python experiments/orchestration_hypothesis_testing/scripts/score_sage_uhead.py ...
-  python experiments/orchestration_hypothesis_testing/scripts/bootstrap_lcb_uq_prr_table.py
-  ```
+```bash
+python analysis/cver_sensitivity_sweep.py
+```
 
-- **Cost-regime sweep** (paper Figure 4):
+### Evaluator caps disclosure
 
-  ```bash
-  python experiments/orchestration_hypothesis_testing/analysis/cver_sensitivity_sweep.py
-  ```
+- **LiveCodeBench**: `--lcb-private-test-cap 12` (first 12 private tests per problem).
+- **HumanEval+ / MBPP+**: `--plus-input-cap 200` (first 200 PLUS inputs).
+- **CodeContests**: public tests capped at 10, final label uses the first 30
+  available tests.
+
+Override at the command line if you want the full hidden suites.
 
 ## Models and benchmarks
 
