@@ -1,0 +1,17 @@
+# Large or regenerable outputs (see README.md, "Reproduce")
+traces.jsonl
+runs/
+runs_fineq/
+/diversity_fixes/summary.csv
+/per_task_prior/summary.csv
+/per_task_prior/signals.csv
+# runs/*.pkl, swe_cver_sweep/logs/vecs.pkl
+*.pkl
+__pycache__/
+
+# The repo root ignores logs/ and *.log; keep the small JSON check results in logs/ committed
+!logs/
+
+# Third-party problem statements: regenerate locally (README, "Reproduce")
+/cache/cc_test_desc.json
+/per_task_prior/cache/lcb_meta.jsonl

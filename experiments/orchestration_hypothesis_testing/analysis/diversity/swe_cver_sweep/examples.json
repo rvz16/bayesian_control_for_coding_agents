@@ -1,0 +1,651 @@
+[
+ {
+  "cell": "swe_verified/gpt_oss_20b",
+  "regime": "cv20_s",
+  "c_ver": 20.0,
+  "critic_costs": "L0 1, L3 5 (no L2 on SWE)",
+  "c_gen": 10,
+  "reward": 100,
+  "prior": 0.29458740017746227,
+  "n_eval": 125,
+  "rule_ii": "gate_syn_giveup",
+  "rule_iii": "q0.25:gate_syn_giveup|never_submit",
+  "U_BDP": 9.872,
+  "U_rule_ii": 6.2,
+  "U_rule_iii": 6.48,
+  "U_perfect": 29.76,
+  "BDP_minus_ii": "3.672 [2.216, 5.08]",
+  "BDP_minus_iii": "3.392 [1.888, 4.824]",
+  "BDP_minus_BG": "-1.368 [-2.528, -0.488]",
+  "BDP_n_distinct_seq": 7,
+  "first_action_counts": {
+   "give_up": 33,
+   "verify": 61,
+   "generate": 9,
+   "L0": 22
+  },
+  "examples": [
+   {
+    "first_action": "verify",
+    "n_tasks_with_this_first_action": 61,
+    "mean_BDP_utility_these_tasks": 24.26,
+    "mean_rule_ii_utility_these_tasks": 23.26,
+    "sequence_share_within_first_action": "61/61",
+    "instance_id": "astropy__astropy-13033",
+    "free_signals": {
+     "combtask_score": "0.40512924565598185",
+     "task_bin": 3,
+     "diff_chars_per_patch": [
+      "1445",
+      "0",
+      "0"
+     ],
+     "swe_difficulty": "1.0",
+     "n_code_blocks": "5.0"
+    },
+    "belief_task_bT": 0.5093,
+    "belief_start_per_patch_b0": [
+     0.38,
+     0.0356,
+     0.0356
+    ],
+    "steps": [
+     {
+      "action": "verify",
+      "patch": 0,
+      "observation": 0,
+      "belief_before": 0.38,
+      "belief_after": 0.38
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -20.0,
+    "utility_rule_ii": -21.0,
+    "utility_rule_iii": -21.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "give_up",
+    "n_tasks_with_this_first_action": 33,
+    "mean_BDP_utility_these_tasks": 0.0,
+    "mean_rule_ii_utility_these_tasks": -13.12,
+    "sequence_share_within_first_action": "33/33",
+    "instance_id": "django__django-10554",
+    "free_signals": {
+     "combtask_score": "-2.0924700364659143",
+     "task_bin": 0,
+     "diff_chars_per_patch": [
+      "0",
+      "0",
+      "0"
+     ],
+     "swe_difficulty": "2.0",
+     "n_code_blocks": "0.0"
+    },
+    "belief_task_bT": 0.042,
+    "belief_start_per_patch_b0": [
+     0.0075,
+     0.0075,
+     0.0075
+    ],
+    "steps": [
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.0075,
+      "belief_after": 0.0075
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": 0.0,
+    "utility_rule_ii": -1.0,
+    "utility_rule_iii": 0.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "L0",
+    "n_tasks_with_this_first_action": 22,
+    "mean_BDP_utility_these_tasks": -1.0,
+    "mean_rule_ii_utility_these_tasks": -1.0,
+    "sequence_share_within_first_action": "22/22",
+    "instance_id": "astropy__astropy-14598",
+    "free_signals": {
+     "combtask_score": "-0.9894418483047234",
+     "task_bin": 2,
+     "diff_chars_per_patch": [
+      "0",
+      "0",
+      "1021"
+     ],
+     "swe_difficulty": "1.0",
+     "n_code_blocks": "10.0"
+    },
+    "belief_task_bT": 0.4293,
+    "belief_start_per_patch_b0": [
+     0.0176,
+     0.0176,
+     0.5038
+    ],
+    "steps": [
+     {
+      "action": "L0",
+      "patch": 0,
+      "observation": false,
+      "belief_before": 0.0176,
+      "belief_after": 0.0001
+     },
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.0001,
+      "belief_after": 0.0001
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -1.0,
+    "utility_rule_ii": -1.0,
+    "utility_rule_iii": 0.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "generate",
+    "n_tasks_with_this_first_action": 9,
+    "mean_BDP_utility_these_tasks": -24.89,
+    "mean_rule_ii_utility_these_tasks": -21.0,
+    "sequence_share_within_first_action": "3/9",
+    "instance_id": "django__django-13121",
+    "free_signals": {
+     "combtask_score": "-1.0930247994881097",
+     "task_bin": 1,
+     "diff_chars_per_patch": [
+      "1391",
+      "0",
+      "0"
+     ],
+     "swe_difficulty": "1.0",
+     "n_code_blocks": "0.0"
+    },
+    "belief_task_bT": 0.1999,
+    "belief_start_per_patch_b0": [
+     0.1803,
+     0.0121,
+     0.0121
+    ],
+    "steps": [
+     {
+      "action": "generate",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.1803,
+      "belief_after": 0.0175
+     },
+     {
+      "action": "L0",
+      "patch": 1,
+      "observation": false,
+      "belief_before": 0.0175,
+      "belief_after": 0.0001
+     },
+     {
+      "action": "give_up",
+      "patch": 1,
+      "observation": null,
+      "belief_before": 0.0001,
+      "belief_after": 0.0001
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -11.0,
+    "utility_rule_ii": -21.0,
+    "utility_rule_iii": -21.0,
+    "utility_perfect_oracle": 0.0
+   }
+  ]
+ },
+ {
+  "cell": "swe_lite/qwen25_32b",
+  "regime": "cv15_s",
+  "c_ver": 15.0,
+  "critic_costs": "L0 1, L3 5 (no L2 on SWE)",
+  "c_gen": 10,
+  "reward": 100,
+  "prior": 0.1344165435745938,
+  "n_eval": 75,
+  "rule_ii": "gate_syn_giveup",
+  "rule_iii": "q0.5:gate_syn_giveup|never_submit",
+  "U_BDP": 7.013,
+  "U_rule_ii": 1.8,
+  "U_rule_iii": 4.16,
+  "U_perfect": 17.2,
+  "BDP_minus_ii": "5.213 [0.96, 8.614]",
+  "BDP_minus_iii": "2.853 [1.56, 4.187]",
+  "BDP_minus_BG": "0.0 [0.0, 0.0]",
+  "BDP_n_distinct_seq": 5,
+  "first_action_counts": {
+   "give_up": 33,
+   "verify": 24,
+   "L0": 9,
+   "L3": 9
+  },
+  "examples": [
+   {
+    "first_action": "give_up",
+    "n_tasks_with_this_first_action": 33,
+    "mean_BDP_utility_these_tasks": 0.0,
+    "mean_rule_ii_utility_these_tasks": -9.94,
+    "sequence_share_within_first_action": "33/33",
+    "instance_id": "astropy__astropy-14182",
+    "free_signals": {
+     "combtask_score": "-1.6310883996027619",
+     "task_bin": 2,
+     "diff_chars_per_patch": [
+      "733",
+      "732",
+      "733"
+     ],
+     "swe_difficulty": null,
+     "n_code_blocks": "2.0"
+    },
+    "belief_task_bT": 0.1783,
+    "belief_start_per_patch_b0": [
+     0.1057,
+     0.1057,
+     0.1057
+    ],
+    "steps": [
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.1057,
+      "belief_after": 0.1057
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": 0.0,
+    "utility_rule_ii": -16.0,
+    "utility_rule_iii": -16.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "verify",
+    "n_tasks_with_this_first_action": 24,
+    "mean_BDP_utility_these_tasks": 22.5,
+    "mean_rule_ii_utility_these_tasks": 21.5,
+    "sequence_share_within_first_action": "24/24",
+    "instance_id": "django__django-10914",
+    "free_signals": {
+     "combtask_score": "-1.2325860407628324",
+     "task_bin": 3,
+     "diff_chars_per_patch": [
+      "484",
+      "484",
+      "484"
+     ],
+     "swe_difficulty": null,
+     "n_code_blocks": "0.0"
+    },
+    "belief_task_bT": 0.2246,
+    "belief_start_per_patch_b0": [
+     0.3395,
+     0.3395,
+     0.3395
+    ],
+    "steps": [
+     {
+      "action": "verify",
+      "patch": 0,
+      "observation": 1,
+      "belief_before": 0.3395,
+      "belief_after": 0.3395
+     }
+    ],
+    "Y_per_patch": [
+     1,
+     1,
+     1
+    ],
+    "utility_BDP": 85.0,
+    "utility_rule_ii": 84.0,
+    "utility_rule_iii": 84.0,
+    "utility_perfect_oracle": 85.0
+   },
+   {
+    "first_action": "L0",
+    "n_tasks_with_this_first_action": 9,
+    "mean_BDP_utility_these_tasks": -1.0,
+    "mean_rule_ii_utility_these_tasks": -1.0,
+    "sequence_share_within_first_action": "9/9",
+    "instance_id": "django__django-14580",
+    "free_signals": {
+     "combtask_score": "-0.7400038460203042",
+     "task_bin": 3,
+     "diff_chars_per_patch": [
+      "0",
+      "0",
+      "0"
+     ],
+     "swe_difficulty": null,
+     "n_code_blocks": "0.0"
+    },
+    "belief_task_bT": 0.2246,
+    "belief_start_per_patch_b0": [
+     0.0435,
+     0.0435,
+     0.0435
+    ],
+    "steps": [
+     {
+      "action": "L0",
+      "patch": 0,
+      "observation": false,
+      "belief_before": 0.0435,
+      "belief_after": 0.0005
+     },
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.0005,
+      "belief_after": 0.0005
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -1.0,
+    "utility_rule_ii": -1.0,
+    "utility_rule_iii": 0.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "L3",
+    "n_tasks_with_this_first_action": 9,
+    "mean_BDP_utility_these_tasks": -0.56,
+    "mean_rule_ii_utility_these_tasks": -4.89,
+    "sequence_share_within_first_action": "5/9",
+    "instance_id": "django__django-11797",
+    "free_signals": {
+     "combtask_score": "-0.4231642671080058",
+     "task_bin": 3,
+     "diff_chars_per_patch": [
+      "675",
+      "0",
+      "0"
+     ],
+     "swe_difficulty": null,
+     "n_code_blocks": "0.0"
+    },
+    "belief_task_bT": 0.2246,
+    "belief_start_per_patch_b0": [
+     0.2525,
+     0.0435,
+     0.0435
+    ],
+    "steps": [
+     {
+      "action": "L3",
+      "patch": 0,
+      "observation": false,
+      "belief_before": 0.2525,
+      "belief_after": 0.0686
+     },
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.0686,
+      "belief_after": 0.0686
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -5.0,
+    "utility_rule_ii": -16.0,
+    "utility_rule_iii": -16.0,
+    "utility_perfect_oracle": 0.0
+   }
+  ]
+ },
+ {
+  "cell": "swe_verified/qwen25_32b",
+  "regime": "cv20_s",
+  "c_ver": 20.0,
+  "critic_costs": "L0 1, L3 5 (no L2 on SWE)",
+  "c_gen": 10,
+  "reward": 100,
+  "prior": 0.15616681455190773,
+  "n_eval": 125,
+  "rule_ii": "gate_syn_giveup",
+  "rule_iii": "q0.25:gate_syn_giveup|never_submit",
+  "U_BDP": 5.504,
+  "U_rule_ii": -2.28,
+  "U_rule_iii": 1.536,
+  "U_perfect": 17.36,
+  "BDP_minus_ii": "7.784 [4.432, 10.544]",
+  "BDP_minus_iii": "3.968 [0.808, 6.784]",
+  "BDP_minus_BG": "-0.064 [-0.112, -0.024]",
+  "BDP_n_distinct_seq": 5,
+  "first_action_counts": {
+   "give_up": 52,
+   "verify": 29,
+   "L3": 22,
+   "L0": 22
+  },
+  "examples": [
+   {
+    "first_action": "give_up",
+    "n_tasks_with_this_first_action": 52,
+    "mean_BDP_utility_these_tasks": 0.0,
+    "mean_rule_ii_utility_these_tasks": -15.23,
+    "sequence_share_within_first_action": "52/52",
+    "instance_id": "astropy__astropy-13977",
+    "free_signals": {
+     "combtask_score": "-2.3769900969862903",
+     "task_bin": 1,
+     "diff_chars_per_patch": [
+      "585",
+      "502",
+      "502"
+     ],
+     "swe_difficulty": "1.0",
+     "n_code_blocks": "10.0"
+    },
+    "belief_task_bT": 0.1078,
+    "belief_start_per_patch_b0": [
+     0.1453,
+     0.1453,
+     0.1453
+    ],
+    "steps": [
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.1453,
+      "belief_after": 0.1453
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": 0.0,
+    "utility_rule_ii": -21.0,
+    "utility_rule_iii": -21.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "verify",
+    "n_tasks_with_this_first_action": 29,
+    "mean_BDP_utility_these_tasks": 14.48,
+    "mean_rule_ii_utility_these_tasks": 13.48,
+    "sequence_share_within_first_action": "29/29",
+    "instance_id": "astropy__astropy-14995",
+    "free_signals": {
+     "combtask_score": "-1.0064049613589208",
+     "task_bin": 3,
+     "diff_chars_per_patch": [
+      "476",
+      "476",
+      "476"
+     ],
+     "swe_difficulty": "0.0",
+     "n_code_blocks": "2.0"
+    },
+    "belief_task_bT": 0.3034,
+    "belief_start_per_patch_b0": [
+     0.4463,
+     0.4463,
+     0.4463
+    ],
+    "steps": [
+     {
+      "action": "verify",
+      "patch": 0,
+      "observation": 1,
+      "belief_before": 0.4463,
+      "belief_after": 0.4463
+     }
+    ],
+    "Y_per_patch": [
+     1,
+     1,
+     1
+    ],
+    "utility_BDP": 80.0,
+    "utility_rule_ii": 79.0,
+    "utility_rule_iii": 79.0,
+    "utility_perfect_oracle": 80.0
+   },
+   {
+    "first_action": "L3",
+    "n_tasks_with_this_first_action": 22,
+    "mean_BDP_utility_these_tasks": 13.18,
+    "mean_rule_ii_utility_these_tasks": 6.27,
+    "sequence_share_within_first_action": "12/22",
+    "instance_id": "astropy__astropy-14365",
+    "free_signals": {
+     "combtask_score": "-2.472713314130805",
+     "task_bin": 1,
+     "diff_chars_per_patch": [
+      "337",
+      "734",
+      "337"
+     ],
+     "swe_difficulty": "1.0",
+     "n_code_blocks": "4.0"
+    },
+    "belief_task_bT": 0.1078,
+    "belief_start_per_patch_b0": [
+     0.187,
+     0.1091,
+     0.187
+    ],
+    "steps": [
+     {
+      "action": "L3",
+      "patch": 0,
+      "observation": false,
+      "belief_before": 0.187,
+      "belief_after": 0.0662
+     },
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.0662,
+      "belief_after": 0.0662
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -5.0,
+    "utility_rule_ii": -21.0,
+    "utility_rule_iii": -21.0,
+    "utility_perfect_oracle": 0.0
+   },
+   {
+    "first_action": "L0",
+    "n_tasks_with_this_first_action": 22,
+    "mean_BDP_utility_these_tasks": -1.0,
+    "mean_rule_ii_utility_these_tasks": -1.0,
+    "sequence_share_within_first_action": "22/22",
+    "instance_id": "django__django-10554",
+    "free_signals": {
+     "combtask_score": "-3.1859830533177584",
+     "task_bin": 0,
+     "diff_chars_per_patch": [
+      "0",
+      "0",
+      "0"
+     ],
+     "swe_difficulty": "2.0",
+     "n_code_blocks": "0.0"
+    },
+    "belief_task_bT": 0.0243,
+    "belief_start_per_patch_b0": [
+     0.01,
+     0.01,
+     0.01
+    ],
+    "steps": [
+     {
+      "action": "L0",
+      "patch": 0,
+      "observation": false,
+      "belief_before": 0.01,
+      "belief_after": 0.0001
+     },
+     {
+      "action": "give_up",
+      "patch": 0,
+      "observation": null,
+      "belief_before": 0.0001,
+      "belief_after": 0.0001
+     }
+    ],
+    "Y_per_patch": [
+     0,
+     0,
+     0
+    ],
+    "utility_BDP": -1.0,
+    "utility_rule_ii": -1.0,
+    "utility_rule_iii": 0.0,
+    "utility_perfect_oracle": 0.0
+   }
+  ]
+ }
+]

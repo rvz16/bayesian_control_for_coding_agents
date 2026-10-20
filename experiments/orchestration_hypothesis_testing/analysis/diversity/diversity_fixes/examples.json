@@ -1,0 +1,6085 @@
+{
+ "baseline": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 4,
+  "entropy_bits": 1.699,
+  "prior": 0.387,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.0025,
+     0.0025
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9773,
+     0.9773
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 3,
+    "instance_id": "3212",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.627,
+     0.9328,
+     0.9328
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 82.0,
+    "mean_utility_of_sequence": 82.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.6218,
+     0.9314,
+     0.9314
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 71.0,
+    "mean_utility_of_sequence": 21.0
+   }
+  ]
+ },
+ "s0a": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 4,
+  "entropy_bits": 1.699,
+  "prior": 0.387,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.0025,
+     0.0025
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9773,
+     0.9773
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 3,
+    "instance_id": "3212",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.627,
+     0.9328,
+     0.9328
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 82.0,
+    "mean_utility_of_sequence": 82.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.6218,
+     0.9314,
+     0.9314
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 71.0,
+    "mean_utility_of_sequence": 21.0
+   }
+  ]
+ },
+ "s0b": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 4,
+  "entropy_bits": 1.699,
+  "prior": 0.387,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.0025,
+     0.0025
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L3",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9714,
+     0.9714
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 3,
+    "instance_id": "3212",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.627,
+     0.8974,
+     0.8974
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 82.0,
+    "mean_utility_of_sequence": 82.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.6218,
+     0.8953,
+     0.8953
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 71.0,
+    "mean_utility_of_sequence": 21.0
+   }
+  ]
+ },
+ "s0b_lookahead1": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 4,
+  "entropy_bits": 1.699,
+  "prior": 0.387,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.0025,
+     0.0025
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 3,
+    "instance_id": "3212",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.627,
+     0.8974,
+     0.8974
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 82.0,
+    "mean_utility_of_sequence": 82.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.1691,
+     0.0026,
+     0.166,
+     0.6218,
+     0.6218
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   }
+  ]
+ },
+ "s0c": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.8698,
+     0.9649,
+     0.9649
+    ],
+    "patch": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 92.0,
+    "mean_utility_of_sequence": 51.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.8698,
+     0.9649,
+     0.9649
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 81.0,
+    "mean_utility_of_sequence": 38.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step0": {
+  "cell": "lcb_hard/gpt5_mini",
+  "n_distinct_seq": 8,
+  "entropy_bits": 2.213,
+  "prior": 0.2087,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 12,
+    "instance_id": "3535",
+    "actions": [
+     "L0",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.3065,
+     0.6589,
+     0.6589
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 59.67
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3648",
+    "actions": [
+     "L0",
+     "generate",
+     "L0",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0128,
+     0.2087,
+     0.0128,
+     0.2087,
+     0.0069,
+     0.0069
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3675",
+    "actions": [
+     "L0",
+     "L2",
+     "generate",
+     "L0",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     false,
+     null,
+     true,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.3065,
+     0.0115,
+     0.2087,
+     0.3065,
+     0.6589,
+     0.6589
+    ],
+    "patch": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -19.0,
+    "mean_utility_of_sequence": -19.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3552",
+    "actions": [
+     "L0",
+     "generate",
+     "L0",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0128,
+     0.2087,
+     0.0128,
+     0.2087,
+     0.5356,
+     0.5356
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 72.0
+   }
+  ]
+ },
+ "step0_g201": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step1_H5": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1_H6": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1_H3g51": {
+  "cell": "lcb_hard/gpt5_mini",
+  "n_distinct_seq": 8,
+  "entropy_bits": 2.213,
+  "prior": 0.2087,
+  "rep_kernel": {
+   "P_fix": 0.0625,
+   "P_break": 0.0725,
+   "n_pairs": 193,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9861111111111112,
+     0.92
+    ],
+    "L1_lint": [
+     0.9722222222222222,
+     0.928
+    ],
+    "L2_public_tests": [
+     0.9861111111111112,
+     0.744
+    ],
+    "L3_llm_review": [
+     0.5833333333333334,
+     0.592
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 12,
+    "instance_id": "3535",
+    "actions": [
+     "L0",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.3065,
+     0.6589,
+     0.6589
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     0,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 59.67
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3648",
+    "actions": [
+     "L0",
+     "generate",
+     "L0",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0128,
+     0.2087,
+     0.0128,
+     0.2087,
+     0.0069,
+     0.0069
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3675",
+    "actions": [
+     "L0",
+     "L2",
+     "generate",
+     "L0",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     false,
+     null,
+     true,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.3065,
+     0.0115,
+     0.2087,
+     0.3065,
+     0.6589,
+     0.6589
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0",
+     "1",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -19.0,
+    "mean_utility_of_sequence": -19.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3552",
+    "actions": [
+     "L0",
+     "generate",
+     "L0",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0128,
+     0.2087,
+     0.0128,
+     0.2087,
+     0.5356,
+     0.5356
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "utility": 72.0,
+    "mean_utility_of_sequence": 72.0
+   }
+  ]
+ },
+ "step1_H5_crep5": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.392,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "repair",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     "same",
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6415,
+     0.6861,
+     0.6861
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 88.0,
+    "mean_utility_of_sequence": 51.64
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3613",
+    "actions": [
+     "L2",
+     "repair",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     "chg",
+     true,
+     0
+    ],
+    "beliefs": [
+     0.6186,
+     0.6415,
+     0.8805,
+     0.8805
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -12.0,
+    "mean_utility_of_sequence": 38.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   }
+  ]
+ },
+ "step1_H5_crep15": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step1_H5_L1": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1_H5_obs": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.013,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -33.0,
+    "mean_utility_of_sequence": -33.0
+   }
+  ]
+ },
+ "step1_H5_rfx": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0431,
+   "P_break": 0.0192,
+   "n_pairs": 303,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9838709677419355,
+     0.9428571428571428
+    ],
+    "L1_lint": [
+     0.9838709677419355,
+     0.9551020408163265
+    ],
+    "L2_public_tests": [
+     0.9838709677419355,
+     0.2653061224489796
+    ],
+    "L3_llm_review": [
+     0.8387096774193549,
+     0.6653061224489796
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0
+    ],
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step1mx_H5": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1mx_H6": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1mx_H3g51": {
+  "cell": "lcb_hard/gpt5_mini",
+  "n_distinct_seq": 8,
+  "entropy_bits": 2.213,
+  "prior": 0.2087,
+  "rep_kernel": {
+   "P_fix": 0.0625,
+   "P_break": 0.0725,
+   "n_pairs": 193,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9861111111111112,
+     0.92
+    ],
+    "L1_lint": [
+     0.9722222222222222,
+     0.928
+    ],
+    "L2_public_tests": [
+     0.9861111111111112,
+     0.744
+    ],
+    "L3_llm_review": [
+     0.5833333333333334,
+     0.592
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 12,
+    "instance_id": "3535",
+    "actions": [
+     "L0",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.3065,
+     0.6589,
+     0.6589
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     0,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 59.67
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3648",
+    "actions": [
+     "L0",
+     "generate",
+     "L0",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0128,
+     0.2087,
+     0.0128,
+     0.2087,
+     0.0069,
+     0.0069
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3675",
+    "actions": [
+     "L0",
+     "L2",
+     "generate",
+     "L0",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     false,
+     null,
+     true,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.3065,
+     0.0115,
+     0.2087,
+     0.3065,
+     0.6589,
+     0.6589
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0",
+     "1",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -19.0,
+    "mean_utility_of_sequence": -19.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3552",
+    "actions": [
+     "L0",
+     "generate",
+     "L0",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0128,
+     0.2087,
+     0.0128,
+     0.2087,
+     0.5356,
+     0.5356
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "utility": 72.0,
+    "mean_utility_of_sequence": 72.0
+   }
+  ]
+ },
+ "step1mx_H5_crep5": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.392,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "repair",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     "same",
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6415,
+     0.6861,
+     0.6861
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 88.0,
+    "mean_utility_of_sequence": 51.64
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3613",
+    "actions": [
+     "L2",
+     "repair",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     "chg",
+     true,
+     0
+    ],
+    "beliefs": [
+     0.6186,
+     0.6415,
+     0.8805,
+     0.8805
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -12.0,
+    "mean_utility_of_sequence": 38.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   }
+  ]
+ },
+ "step1mx_H5_crep15": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step1mx_H5_obs": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.013,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -33.0,
+    "mean_utility_of_sequence": -33.0
+   }
+  ]
+ },
+ "step1mx_H5_L1": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.387,
+     0.0079,
+     0.387,
+     0.8391,
+     0.8391
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.387,
+     0.0079,
+     0.387,
+     0.0079,
+     0.0079
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1mx_H5_chlik": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step1mx_H6_chlik": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "step1_H5_chlik": {
+  "cell": "lcb_medium/gpt5_mini",
+  "n_distinct_seq": 5,
+  "entropy_bits": 1.876,
+  "prior": 0.2827,
+  "rep_kernel": {
+   "P_fix": 0.0881,
+   "P_break": 0.0174,
+   "n_pairs": 304,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9923076923076923,
+     0.9606741573033708
+    ],
+    "L1_lint": [
+     0.9923076923076923,
+     0.9775280898876404
+    ],
+    "L2_public_tests": [
+     0.9923076923076923,
+     0.6235955056179775
+    ],
+    "L3_llm_review": [
+     0.7538461538461538,
+     0.6348314606741573
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 22,
+    "instance_id": "3384",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.6186,
+     0.6646,
+     0.6646
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     1
+    ],
+    "Y_chain": [
+     1,
+     1
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 52.09
+   },
+   {
+    "n_tasks_with_this_sequence": 17,
+    "instance_id": "3171",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.0039,
+     0.0039
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 7,
+    "instance_id": "3627",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1"
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 83.0,
+    "mean_utility_of_sequence": 40.14
+   },
+   {
+    "n_tasks_with_this_sequence": 5,
+    "instance_id": "2868",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     0
+    ],
+    "beliefs": [
+     0.0039,
+     0.2827,
+     0.0039,
+     0.2827,
+     0.6186,
+     0.6186
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "utility": -28.0,
+    "mean_utility_of_sequence": -28.0
+   }
+  ]
+ },
+ "s0c_calK": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 4,
+  "entropy_bits": 1.699,
+  "prior": 0.387,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9773,
+     0.9773
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 3,
+    "instance_id": "3212",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.7371,
+     0.9586,
+     0.9586
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 82.0,
+    "mean_utility_of_sequence": 82.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.7355,
+     0.7355
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   }
+  ]
+ },
+ "step0_calK": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 4,
+  "entropy_bits": 1.699,
+  "prior": 0.387,
+  "rep_kernel": {},
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 11,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L3",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9714,
+     0.9714
+    ],
+    "patch": [
+     0,
+     0,
+     0
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": null,
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 3,
+    "instance_id": "3212",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.7371,
+     0.9358,
+     0.9358
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "Y_fresh": [
+     0,
+     1,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 82.0,
+    "mean_utility_of_sequence": 82.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.7355,
+     0.7355
+    ],
+    "patch": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   }
+  ]
+ },
+ "step1K_H5": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.7355,
+     0.7355
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.2933,
+     0.0052,
+     0.2523,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1mxK_H5": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.7355,
+     0.7355
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.2933,
+     0.0052,
+     0.2523,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1mxK_H6": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.7355,
+     0.7355
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "L3",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.242,
+     0.0999,
+     0.2933,
+     0.0052,
+     0.2523,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -34.0,
+    "mean_utility_of_sequence": -34.0
+   }
+  ]
+ },
+ "step1mxK_H5_obs": {
+  "cell": "lcb_hard/gpt_oss_20b",
+  "n_distinct_seq": 7,
+  "entropy_bits": 2.068,
+  "prior": 0.387,
+  "rep_kernel": {
+   "P_fix": 0.2375,
+   "P_break": 0.1959,
+   "n_pairs": 173,
+   "likes_rep": {
+    "L0_syntax": [
+     0.9896907216494846,
+     0.7125
+    ],
+    "L1_lint": [
+     0.010309278350515464,
+     0.0125
+    ],
+    "L2_public_tests": [
+     0.979381443298969,
+     0.3
+    ],
+    "L3_llm_review": [
+     0.6597938144329897,
+     0.375
+    ]
+   }
+  },
+  "examples": [
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3648",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": null,
+    "utility": -23.0,
+    "mean_utility_of_sequence": -23.0
+   },
+   {
+    "n_tasks_with_this_sequence": 10,
+    "instance_id": "3535",
+    "actions": [
+     "L2",
+     "L0",
+     "verify"
+    ],
+    "obs": [
+     true,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.8391,
+     0.9644,
+     0.9644
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0"
+    ],
+    "Y_fresh": [
+     1,
+     1,
+     0
+    ],
+    "Y_chain": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "utility": 93.0,
+    "mean_utility_of_sequence": 83.0
+   },
+   {
+    "n_tasks_with_this_sequence": 2,
+    "instance_id": "3552",
+    "actions": [
+     "L2",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "verify"
+    ],
+    "obs": [
+     false,
+     null,
+     false,
+     null,
+     true,
+     1
+    ],
+    "beliefs": [
+     0.0079,
+     0.2534,
+     0.0043,
+     0.2518,
+     0.7355,
+     0.7355
+    ],
+    "patch": [
+     "0",
+     "0",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     1
+    ],
+    "Y_chain": null,
+    "utility": 72.0,
+    "mean_utility_of_sequence": 22.0
+   },
+   {
+    "n_tasks_with_this_sequence": 1,
+    "instance_id": "3478",
+    "actions": [
+     "L2",
+     "repair",
+     "generate",
+     "L2",
+     "generate",
+     "L2",
+     "give_up"
+    ],
+    "obs": [
+     false,
+     "same",
+     null,
+     false,
+     null,
+     false,
+     null
+    ],
+    "beliefs": [
+     0.0079,
+     0.013,
+     0.2556,
+     0.0043,
+     0.2519,
+     0.0042,
+     0.0042
+    ],
+    "patch": [
+     "0",
+     "0",
+     "0r1",
+     "1",
+     "1",
+     "2",
+     "2"
+    ],
+    "Y_fresh": [
+     0,
+     0,
+     0
+    ],
+    "Y_chain": [
+     0,
+     0
+    ],
+    "utility": -33.0,
+    "mean_utility_of_sequence": -33.0
+   }
+  ]
+ }
+}

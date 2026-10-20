@@ -1,0 +1,20 @@
+{
+ "rows_compared": 132,
+ "mismatches": 0,
+ "PASS": true,
+ "examples": [],
+ "perfect_info_headroom_on_per_task_prior_runs": {
+  "calK_jointcomb": {
+   "all": 4.762,
+   "nonswe": 5.371,
+   "swe": 2.629,
+   "n_cells": 54
+  },
+  "calK_const": {
+   "all": 4.932,
+   "nonswe": 5.59,
+   "swe": 2.629,
+   "n_cells": 54
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "single_rule_evalpicked": "gate_syn",
+ "single_eval_scores": {
+  "always_verify": 27.707527760856564,
+  "never_submit": 0.0,
+  "gate_syn": 30.540384903191242,
+  "gate_llm": 24.68148823291024,
+  "fixed_pipeline": 22.928986458172716
+ },
+ "single_rule_trainpicked": "gate_syn",
+ "single_train_scores": {
+  "always_verify": 25.389084308377328,
+  "never_submit": 0.0,
+  "gate_syn": 28.784562231503294,
+  "gate_llm": 22.56681026520976,
+  "fixed_pipeline": 20.82376955752957
+ },
+ "bench_rule_trainpicked": {
+  "codecontests": "gate_test_giveup",
+  "humaneval": "gate_test",
+  "humanevalfix": "always_verify",
+  "lcb_easy": "gate_test_giveup",
+  "lcb_hard": "gate_test_giveup",
+  "lcb_medium": "gate_test_giveup",
+  "mbpp": "always_verify",
+  "swe_lite": "never_submit",
+  "swe_verified": "never_submit"
+ }
+}

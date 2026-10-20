@@ -1,0 +1,56 @@
+{
+ "lcb_hard": {
+  "n_ids": 102,
+  "n_matched": 102,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "lcb_medium": {
+  "n_ids": 207,
+  "n_matched": 207,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "lcb_easy": {
+  "n_ids": 135,
+  "n_matched": 135,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "mbpp": {
+  "n_ids": 378,
+  "n_matched": 378,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "humaneval": {
+  "n_ids": 164,
+  "n_matched": 164,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "humanevalfix": {
+  "n_ids": 164,
+  "n_matched": 164,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "codecontests": {
+  "n_ids": 165,
+  "n_matched": 165,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "swe_lite": {
+  "n_ids": 300,
+  "n_matched": 300,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ },
+ "swe_verified": {
+  "n_ids": 500,
+  "n_matched": 500,
+  "match_rate": 1.0,
+  "unmatched_examples": []
+ }
+}

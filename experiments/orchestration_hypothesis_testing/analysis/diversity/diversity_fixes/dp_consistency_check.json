@@ -1,0 +1,77 @@
+{
+ "step0/lcb_medium/gpt5_mini": {
+  "V_root": 37.294,
+  "mc_mean": 37.165,
+  "mc_se": 0.371
+ },
+ "step0/humanevalfix/gpt5_mini": {
+  "V_root": 91.987,
+  "mc_mean": 91.564,
+  "mc_se": 0.071
+ },
+ "step0/codecontests/qwen3_coder": {
+  "V_root": 30.496,
+  "mc_mean": 29.897,
+  "mc_se": 0.381
+ },
+ "step0_g201/lcb_medium/gpt5_mini": {
+  "V_root": 37.793,
+  "mc_mean": 37.845,
+  "mc_se": 0.371
+ },
+ "step0_g201/humanevalfix/gpt5_mini": {
+  "V_root": 91.399,
+  "mc_mean": 91.555,
+  "mc_se": 0.068
+ },
+ "step0_g201/codecontests/qwen3_coder": {
+  "V_root": 30.186,
+  "mc_mean": 29.944,
+  "mc_se": 0.381
+ },
+ "step1_H5/lcb_medium/gpt5_mini": {
+  "V_root": 37.793,
+  "mc_mean": 37.519,
+  "mc_se": 0.371
+ },
+ "step1_H5/humanevalfix/gpt5_mini": {
+  "V_root": 91.604,
+  "mc_mean": 91.66,
+  "mc_se": 0.056
+ },
+ "step1_H5/codecontests/qwen3_coder": {
+  "V_root": 30.186,
+  "mc_mean": 29.399,
+  "mc_se": 0.381
+ },
+ "step1mx_H6/lcb_medium/gpt5_mini": {
+  "V_root": 37.793,
+  "mc_mean": 37.715,
+  "mc_se": 0.37
+ },
+ "step1mx_H6/humanevalfix/gpt5_mini": {
+  "V_root": 91.608,
+  "mc_mean": 91.687,
+  "mc_se": 0.057
+ },
+ "step1mx_H6/codecontests/qwen3_coder": {
+  "V_root": 30.186,
+  "mc_mean": 29.295,
+  "mc_se": 0.381
+ },
+ "step1mxK_H5/lcb_medium/gpt5_mini": {
+  "V_root": 25.045,
+  "mc_mean": 25.013,
+  "mc_se": 0.349
+ },
+ "step1mxK_H5/humanevalfix/gpt5_mini": {
+  "V_root": 91.498,
+  "mc_mean": 91.869,
+  "mc_se": 0.053
+ },
+ "step1mxK_H5/codecontests/qwen3_coder": {
+  "V_root": 21.574,
+  "mc_mean": 21.497,
+  "mc_se": 0.38
+ }
+}

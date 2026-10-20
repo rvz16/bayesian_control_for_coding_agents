@@ -1,0 +1,5018 @@
+{
+ "calK_comb": [
+  {
+   "cell": "lcb_medium/gpt5_mini",
+   "matched_paper_cell": true,
+   "prior": 0.2827,
+   "first_action_counts": {
+    "L2": 31,
+    "L3": 13,
+    "generate": 6,
+    "verify": 2
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     -1.8731,
+     -1.3244,
+     -0.6414
+    ],
+    "lik_task_Y1": [
+     0.1259,
+     0.1259,
+     0.2,
+     0.5481
+    ],
+    "lik_task_Y0": [
+     0.3018,
+     0.3018,
+     0.2633,
+     0.1331
+    ],
+    "patch": [
+     "len",
+     "lint"
+    ],
+    "n_patch_bins": [
+     5,
+     2
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0074,
+       0.2721,
+       0.2059,
+       0.2132,
+       0.3015
+      ],
+      "Y0": [
+       0.1593,
+       0.2035,
+       0.2271,
+       0.2212,
+       0.1888
+      ]
+     },
+     {
+      "Y1": [
+       0.0075,
+       0.9925
+      ],
+      "Y0": [
+       0.1607,
+       0.8393
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 31,
+     "instance_id": "2792",
+     "task_features": {
+      "diff_chars": "177",
+      "L1_lint": "1.0",
+      "t_contest_days": "1229.0",
+      "t_log_len_starter": "4.477336814478207",
+      "t_log_len_statement": "7.1276936993473985",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "0.18232384462909929",
+      "difficulty": "-1.2738336064062419",
+      "combtask": "-0.1245830734122681"
+     },
+     "bT": 0.6187,
+     "b0": [
+      0.7194,
+      0.7194,
+      0.7194
+     ],
+     "tbin": 3,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "L2",
+      "generate",
+      "L2",
+      "generate",
+      "L2",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null,
+      false,
+      null,
+      false,
+      null
+     ],
+     "beliefs": [
+      0.0248,
+      0.2076,
+      0.0026,
+      0.1887,
+      0.0023,
+      0.0023
+     ],
+     "patch": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -23.0,
+     "mean_utility_first_action": 24.23
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 13,
+     "instance_id": "3000",
+     "task_features": {
+      "diff_chars": "3155",
+      "L1_lint": "1.0",
+      "t_contest_days": "1320.0",
+      "t_log_len_starter": "4.543294782270004",
+      "t_log_len_statement": "7.0909098220799835",
+      "t_n_constraints_lines": "5.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-0.560463280379133",
+      "difficulty": "-2.0996893788008766",
+      "combtask": "-1.7174338741955752"
+     },
+     "bT": 0.1412,
+     "b0": [
+      0.2369,
+      0.2369,
+      0.2369
+     ],
+     "tbin": 1,
+     "pcombos": [
+      9,
+      9,
+      9
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "generate",
+      "L2",
+      "generate",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      false,
+      false,
+      null,
+      false,
+      null,
+      true,
+      0
+     ],
+     "beliefs": [
+      0.1718,
+      0.0021,
+      0.2169,
+      0.0027,
+      0.2176,
+      0.5337,
+      0.5337
+     ],
+     "patch": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -29.0,
+     "mean_utility_first_action": -10.38
+    },
+    {
+     "first_action": "generate",
+     "n_tasks_with_this_first_action": 6,
+     "instance_id": "3192",
+     "task_features": {
+      "diff_chars": "0",
+      "L1_lint": "0.0",
+      "t_contest_days": "1417.0",
+      "t_log_len_starter": "4.48863636973214",
+      "t_log_len_statement": "6.879355804460439",
+      "t_n_constraints_lines": "7.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-0.9376341578131422",
+      "difficulty": "-0.034148377838787214",
+      "combtask": "0.0875533986652009"
+     },
+     "bT": 0.6187,
+     "b0": [
+      0.0035,
+      0.0035,
+      0.0035
+     ],
+     "tbin": 3,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "generate",
+      "generate",
+      "give_up"
+     ],
+     "obs": [
+      null,
+      null,
+      null
+     ],
+     "beliefs": [
+      0.0003,
+      0.0003,
+      0.0003
+     ],
+     "patch": [
+      0,
+      1,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -20.0,
+     "mean_utility_first_action": 15.17
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 2,
+     "instance_id": "3354",
+     "task_features": {
+      "diff_chars": "1702",
+      "L1_lint": "1.0",
+      "t_contest_days": "1536.0",
+      "t_log_len_starter": "4.31748811353631",
+      "t_log_len_statement": "7.295735072749282",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "2.0",
+      "tasklr": "-0.43714191510089656",
+      "difficulty": "0.3327946117586682",
+      "combtask": "0.3134405011611983"
+     },
+     "bT": 0.6187,
+     "b0": [
+      0.7539,
+      0.7539,
+      0.7539
+     ],
+     "tbin": 3,
+     "pcombos": [
+      9,
+      9,
+      9
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.7539
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 95.0
+    }
+   ]
+  },
+  {
+   "cell": "humanevalfix/gpt_oss_20b",
+   "matched_paper_cell": true,
+   "prior": 0.8329,
+   "first_action_counts": {
+    "L3": 11,
+    "L0": 16,
+    "verify": 6,
+    "L2": 8
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.389,
+     1.7969,
+     2.3461
+    ],
+    "lik_task_Y1": [
+     0.2756,
+     0.2244,
+     0.2276,
+     0.2724
+    ],
+    "lik_task_Y0": [
+     0.1385,
+     0.3846,
+     0.3231,
+     0.1538
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     5
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0032,
+       0.2364,
+       0.2524,
+       0.2588,
+       0.2492
+      ],
+      "Y0": [
+       0.1515,
+       0.3333,
+       0.1667,
+       0.1364,
+       0.2121
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 11,
+     "instance_id": "Python/108",
+     "task_features": {
+      "diff_chars": "182",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.501258210544727",
+      "t_log_len_statement": "5.983936280687191",
+      "t_n_buggy_lines": "7.0",
+      "t_n_doc_examples": "3.0",
+      "t_n_public_tests": "5.0",
+      "tasklr": "1.8199564600774494",
+      "difficulty": "0.9309592067666475",
+      "combtask": "1.4059466657684205"
+     },
+     "bT": 0.7441,
+     "b0": [
+      0.8149,
+      0.8149,
+      0.6734
+     ],
+     "tbin": 1,
+     "pcombos": [
+      2,
+      2,
+      1
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      0
+     ],
+     "beliefs": [
+      0.979,
+      0.979
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -6.0,
+     "mean_utility_first_action": 54.27
+    },
+    {
+     "first_action": "L0",
+     "n_tasks_with_this_first_action": 16,
+     "instance_id": "Python/115",
+     "task_features": {
+      "diff_chars": "108",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.174387269895637",
+      "t_log_len_statement": "6.957497370876951",
+      "t_n_buggy_lines": "1.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "5.0",
+      "tasklr": "1.0733955550428398",
+      "difficulty": "1.006706696413201",
+      "combtask": "0.7593429521628661"
+     },
+     "bT": 0.9084,
+     "b0": [
+      0.8756,
+      0.921,
+      0.9376
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      4,
+      2
+     ],
+     "actions": [
+      "L0",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8929,
+      0.9296,
+      0.9296
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      0,
+      0
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 87.38
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 6,
+     "instance_id": "Python/112",
+     "task_features": {
+      "diff_chars": "158",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.430816798843313",
+      "t_log_len_statement": "6.395261598115449",
+      "t_n_buggy_lines": "2.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.1178613681485674",
+      "difficulty": "1.8553670061408454",
+      "combtask": "1.3371340756158432"
+     },
+     "bT": 0.9084,
+     "b0": [
+      0.9376,
+      0.9376,
+      0.8756
+     ],
+     "tbin": 0,
+     "pcombos": [
+      2,
+      2,
+      1
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9376
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 95.0
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 8,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "144",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "1.6831740695023703",
+      "difficulty": "1.7730009186919808",
+      "combtask": "1.9218094382885567"
+     },
+     "bT": 0.7783,
+     "b0": [
+      0.8417,
+      0.8417,
+      0.8417
+     ],
+     "tbin": 2,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8939,
+      0.8939
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 81.25
+    }
+   ]
+  },
+  {
+   "cell": "lcb_medium/haiku45",
+   "matched_paper_cell": true,
+   "prior": 0.1734,
+   "first_action_counts": {
+    "verify": 20,
+    "give_up": 16,
+    "L2": 16
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     -2.7713,
+     -2.2557,
+     -1.5433
+    ],
+    "lik_task_Y1": [
+     0.0119,
+     0.0833,
+     0.1548,
+     0.75
+    ],
+    "lik_task_Y0": [
+     0.3033,
+     0.2879,
+     0.2648,
+     0.144
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2381,
+       0.2738,
+       0.25,
+       0.2381
+      ],
+      "Y0": [
+       0.2571,
+       0.2416,
+       0.2494,
+       0.2519
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 20,
+     "instance_id": "2792",
+     "task_features": {
+      "diff_chars": "626",
+      "L1_lint": "1.0",
+      "t_contest_days": "1229.0",
+      "t_log_len_starter": "4.477336814478207",
+      "t_log_len_statement": "7.1276936993473985",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-0.483616836363426",
+      "difficulty": "-2.162356332109499",
+      "combtask": "-1.0434924602659412"
+     },
+     "bT": 0.5223,
+     "b0": [
+      0.5031,
+      0.5031,
+      0.5031
+     ],
+     "tbin": 3,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      0
+     ],
+     "beliefs": [
+      0.5031
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -5.0,
+     "mean_utility_first_action": 45.0
+    },
+    {
+     "first_action": "give_up",
+     "n_tasks_with_this_first_action": 16,
+     "instance_id": "2834",
+     "task_features": {
+      "diff_chars": "567",
+      "L1_lint": "1.0",
+      "t_contest_days": "1284.0",
+      "t_log_len_starter": "4.836281906951478",
+      "t_log_len_statement": "7.520234556474628",
+      "t_n_constraints_lines": "6.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "-2.033084274235148",
+      "difficulty": "-2.8702308750004297",
+      "combtask": "-3.0329048596910098"
+     },
+     "bT": 0.0082,
+     "b0": [
+      0.0076,
+      0.0076,
+      0.0076
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "give_up"
+     ],
+     "obs": [
+      null
+     ],
+     "beliefs": [
+      0.0076
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": 0.0,
+     "mean_utility_first_action": 0.0
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 16,
+     "instance_id": "2845",
+     "task_features": {
+      "diff_chars": "339",
+      "L1_lint": "1.0",
+      "t_contest_days": "1264.0",
+      "t_log_len_starter": "4.442651256490317",
+      "t_log_len_statement": "7.152268856032539",
+      "t_n_constraints_lines": "4.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "-1.0836945716445532",
+      "difficulty": "-2.6304642483486154",
+      "combtask": "-2.071258750229129"
+     },
+     "bT": 0.1093,
+     "b0": [
+      0.102,
+      0.102,
+      0.102
+     ],
+     "tbin": 2,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null
+     ],
+     "beliefs": [
+      0.0044,
+      0.0044
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -1.0,
+     "mean_utility_first_action": 4.94
+    }
+   ]
+  },
+  {
+   "cell": "humaneval/qwen25_32b",
+   "matched_paper_cell": true,
+   "prior": 0.8383,
+   "first_action_counts": {
+    "L2": 19,
+    "verify": 20,
+    "L3": 2
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.5363,
+     2.1585,
+     2.584
+    ],
+    "lik_task_Y1": [
+     0.2675,
+     0.2516,
+     0.2229,
+     0.258
+    ],
+    "lik_task_Y0": [
+     0.1746,
+     0.254,
+     0.3492,
+     0.2222
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2484,
+       0.242,
+       0.2643,
+       0.2452
+      ],
+      "Y0": [
+       0.2698,
+       0.3016,
+       0.1587,
+       0.2698
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 19,
+     "instance_id": "HumanEval/108",
+     "task_features": {
+      "diff_chars": "284",
+      "L1_lint": "0.0",
+      "t_log_len_docstring": "5.799092654460526",
+      "t_log_len_statement": "5.983936280687191",
+      "t_n_args": "1.0",
+      "t_n_doc_examples": "3.0",
+      "t_n_public_tests": "8.0",
+      "t_priv_n_hidden_tests": "200.0",
+      "tasklr": "1.5868128622739888",
+      "difficulty": "2.1898638199497453",
+      "combtask": "2.2452416530823456"
+     },
+     "bT": 0.7679,
+     "b0": [
+      0.7264,
+      0.7264,
+      0.7264
+     ],
+     "tbin": 2,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.915,
+      0.915
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 81.05
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 20,
+     "instance_id": "HumanEval/103",
+     "task_features": {
+      "diff_chars": "103",
+      "L1_lint": "0.0",
+      "t_log_len_docstring": "5.908082938168931",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_args": "2.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "12.0",
+      "t_priv_n_hidden_tests": "200.0",
+      "tasklr": "1.4202482951346955",
+      "difficulty": "1.6799989769677999",
+      "combtask": "1.4318658214249125"
+     },
+     "bT": 0.8882,
+     "b0": [
+      0.8797,
+      0.8797,
+      0.8797
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.8797
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 70.0
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 2,
+     "instance_id": "HumanEval/5",
+     "task_features": {
+      "diff_chars": "247",
+      "L1_lint": "0.0",
+      "t_log_len_docstring": "5.093750200806762",
+      "t_log_len_statement": "5.662960480135946",
+      "t_n_args": "2.0",
+      "t_n_doc_examples": "2.0",
+      "t_n_public_tests": "3.0",
+      "t_priv_n_hidden_tests": "153.0",
+      "tasklr": "2.083161629357118",
+      "difficulty": "1.6222293224756357",
+      "combtask": "1.611539508114137"
+     },
+     "bT": 0.837,
+     "b0": [
+      0.8047,
+      0.8047,
+      0.8047
+     ],
+     "tbin": 1,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8948,
+      0.9718,
+      0.9718
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 34.5
+    }
+   ]
+  }
+ ],
+ "calK_jointcomb": [
+  {
+   "cell": "lcb_medium/gpt5_mini",
+   "matched_paper_cell": true,
+   "prior": 0.2827,
+   "first_action_counts": {
+    "L2": 43,
+    "generate": 2,
+    "verify": 4,
+    "L3": 3
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     -1.8731,
+     -1.3244,
+     -0.6414
+    ],
+    "lik_task_Y1": [
+     0.1259,
+     0.1259,
+     0.2,
+     0.5481
+    ],
+    "lik_task_Y0": [
+     0.3018,
+     0.3018,
+     0.2633,
+     0.1331
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     5
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0074,
+       0.2721,
+       0.2059,
+       0.2132,
+       0.3015
+      ],
+      "Y0": [
+       0.1593,
+       0.2035,
+       0.2271,
+       0.2212,
+       0.1888
+      ]
+     }
+    ],
+    "joint": {
+     "lik_len_given_task": {
+      "0": {
+       "Y1": [
+        0.0476,
+        0.0476,
+        0.1429,
+        0.2381,
+        0.5238
+       ],
+       "Y0": [
+        0.1604,
+        0.1604,
+        0.1226,
+        0.3019,
+        0.2547
+       ]
+      },
+      "1": {
+       "Y1": [
+        0.0476,
+        0.2857,
+        0.2857,
+        0.1905,
+        0.1905
+       ],
+       "Y0": [
+        0.1981,
+        0.217,
+        0.1792,
+        0.1887,
+        0.217
+       ]
+      },
+      "2": {
+       "Y1": [
+        0.0323,
+        0.3548,
+        0.129,
+        0.1935,
+        0.2903
+       ],
+       "Y0": [
+        0.0968,
+        0.2151,
+        0.3226,
+        0.2473,
+        0.1183
+       ]
+      },
+      "3": {
+       "Y1": [
+        0.0128,
+        0.2821,
+        0.2308,
+        0.2179,
+        0.2564
+       ],
+       "Y0": [
+        0.2041,
+        0.2449,
+        0.3673,
+        0.0612,
+        0.1224
+       ]
+      }
+     },
+     "critic_likes_by_len": {
+      "0": {
+       "L0_syntax": [
+        0.9925,
+        0.0295
+       ],
+       "L2_public_tests": [
+        0.9925,
+        0.0088
+       ],
+       "L3_llm_review": [
+        0.7594,
+        0.0233
+       ]
+      },
+      "1": {
+       "L0_syntax": [
+        0.9996,
+        0.9518
+       ],
+       "L2_public_tests": [
+        0.9996,
+        0.2355
+       ],
+       "L3_llm_review": [
+        0.9347,
+        0.7183
+       ]
+      },
+      "2": {
+       "L0_syntax": [
+        0.9995,
+        0.9952
+       ],
+       "L2_public_tests": [
+        0.9995,
+        0.3011
+       ],
+       "L3_llm_review": [
+        0.742,
+        0.8754
+       ]
+      },
+      "3": {
+       "L0_syntax": [
+        0.9995,
+        0.9556
+       ],
+       "L2_public_tests": [
+        0.9995,
+        0.2563
+       ],
+       "L3_llm_review": [
+        0.6173,
+        0.8195
+       ]
+      },
+      "4": {
+       "L0_syntax": [
+        0.9996,
+        0.9481
+       ],
+       "L2_public_tests": [
+        0.9996,
+        0.3459
+       ],
+       "L3_llm_review": [
+        0.7266,
+        0.5889
+       ]
+      }
+     }
+    }
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 43,
+     "instance_id": "2792",
+     "task_features": {
+      "diff_chars": "177",
+      "L1_lint": "1.0",
+      "t_contest_days": "1229.0",
+      "t_log_len_starter": "4.477336814478207",
+      "t_log_len_statement": "7.1276936993473985",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "0.18232384462909929",
+      "difficulty": "-1.2738336064062419",
+      "combtask": "-0.1245830734122681"
+     },
+     "bT": 0.6187,
+     "b0": [
+      0.6514,
+      0.6514,
+      0.6514
+     ],
+     "tbin": 3,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "L2",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null
+     ],
+     "beliefs": [
+      0.001,
+      0.001
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -1.0,
+     "mean_utility_first_action": 17.67
+    },
+    {
+     "first_action": "generate",
+     "n_tasks_with_this_first_action": 2,
+     "instance_id": "2834",
+     "task_features": {
+      "diff_chars": "434",
+      "L1_lint": "1.0",
+      "t_contest_days": "1284.0",
+      "t_log_len_starter": "4.836281906951478",
+      "t_log_len_statement": "7.520234556474628",
+      "t_n_constraints_lines": "6.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "-1.3671435932426224",
+      "difficulty": "-1.981708149297172",
+      "combtask": "-2.113995472837337"
+     },
+     "bT": 0.1412,
+     "b0": [
+      0.0465,
+      0.0465,
+      0.0465
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "generate",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      null,
+      true,
+      0
+     ],
+     "beliefs": [
+      0.0519,
+      0.1887,
+      0.1887
+     ],
+     "patch": [
+      0,
+      1,
+      1
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -16.0,
+     "mean_utility_first_action": 34.0
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 4,
+     "instance_id": "2854",
+     "task_features": {
+      "diff_chars": "1105",
+      "L1_lint": "1.0",
+      "t_contest_days": "1270.0",
+      "t_log_len_starter": "4.5217885770490405",
+      "t_log_len_statement": "7.445417556701687",
+      "t_n_constraints_lines": "4.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-0.4144867929987373",
+      "difficulty": "-0.7794667778526246",
+      "combtask": "-0.39477582442459985"
+     },
+     "bT": 0.6187,
+     "b0": [
+      0.8524,
+      0.8524,
+      0.7726
+     ],
+     "tbin": 3,
+     "pcombos": [
+      3,
+      3,
+      4
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      0
+     ],
+     "beliefs": [
+      0.8524
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -5.0,
+     "mean_utility_first_action": 70.0
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 3,
+     "instance_id": "3498",
+     "task_features": {
+      "diff_chars": "0",
+      "L1_lint": "0.0",
+      "t_contest_days": "1662.0",
+      "t_log_len_starter": "4.418840607796598",
+      "t_log_len_statement": "7.0431599159883405",
+      "t_n_constraints_lines": "6.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "3.0",
+      "tasklr": "-1.3936713534063885",
+      "difficulty": "-1.5958232670661334",
+      "combtask": "-1.8548486129173791"
+     },
+     "bT": 0.1412,
+     "b0": [
+      0.038,
+      0.1424,
+      0.1424
+     ],
+     "tbin": 1,
+     "pcombos": [
+      0,
+      3,
+      3
+     ],
+     "actions": [
+      "L3",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null
+     ],
+     "beliefs": [
+      0.0096,
+      0.0096
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -1.0,
+     "mean_utility_first_action": 19.67
+    }
+   ]
+  },
+  {
+   "cell": "lcb_medium/haiku45",
+   "matched_paper_cell": true,
+   "prior": 0.1734,
+   "first_action_counts": {
+    "L3": 7,
+    "give_up": 13,
+    "L2": 30,
+    "verify": 2
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     -2.7713,
+     -2.2557,
+     -1.5433
+    ],
+    "lik_task_Y1": [
+     0.0119,
+     0.0833,
+     0.1548,
+     0.75
+    ],
+    "lik_task_Y0": [
+     0.3033,
+     0.2879,
+     0.2648,
+     0.144
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2381,
+       0.2738,
+       0.25,
+       0.2381
+      ],
+      "Y0": [
+       0.2571,
+       0.2416,
+       0.2494,
+       0.2519
+      ]
+     }
+    ],
+    "joint": {
+     "lik_len_given_task": {
+      "0": {
+       "Y1": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+       ],
+       "Y0": [
+        0.1736,
+        0.2231,
+        0.2975,
+        0.3058
+       ]
+      },
+      "1": {
+       "Y1": [
+        0.1,
+        0.2,
+        0.4,
+        0.3
+       ],
+       "Y0": [
+        0.2522,
+        0.2348,
+        0.2609,
+        0.2522
+       ]
+      },
+      "2": {
+       "Y1": [
+        0.3125,
+        0.375,
+        0.125,
+        0.1875
+       ],
+       "Y0": [
+        0.3019,
+        0.2453,
+        0.217,
+        0.2358
+       ]
+      },
+      "3": {
+       "Y1": [
+        0.2424,
+        0.2576,
+        0.2576,
+        0.2424
+       ],
+       "Y0": [
+        0.3559,
+        0.2881,
+        0.1864,
+        0.1695
+       ]
+      }
+     },
+     "critic_likes_by_len": {
+      "0": {
+       "L0_syntax": [
+        0.9988,
+        0.98
+       ],
+       "L2_public_tests": [
+        0.9965,
+        0.0605
+       ],
+       "L3_llm_review": [
+        0.8769,
+        0.7757
+       ]
+      },
+      "1": {
+       "L0_syntax": [
+        0.999,
+        0.9998
+       ],
+       "L2_public_tests": [
+        0.997,
+        0.0749
+       ],
+       "L3_llm_review": [
+        0.8089,
+        0.8562
+       ]
+      },
+      "2": {
+       "L0_syntax": [
+        0.9989,
+        0.9998
+       ],
+       "L2_public_tests": [
+        0.9967,
+        0.0318
+       ],
+       "L3_llm_review": [
+        0.6098,
+        0.6872
+       ]
+      },
+      "3": {
+       "L0_syntax": [
+        0.9988,
+        0.9998
+       ],
+       "L2_public_tests": [
+        0.9013,
+        0.0517
+       ],
+       "L3_llm_review": [
+        0.5436,
+        0.3772
+       ]
+      }
+     }
+    }
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 7,
+     "instance_id": "2792",
+     "task_features": {
+      "diff_chars": "626",
+      "L1_lint": "1.0",
+      "t_contest_days": "1229.0",
+      "t_log_len_starter": "4.477336814478207",
+      "t_log_len_statement": "7.1276936993473985",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-0.483616836363426",
+      "difficulty": "-2.162356332109499",
+      "combtask": "-1.0434924602659412"
+     },
+     "bT": 0.5223,
+     "b0": [
+      0.4268,
+      0.4268,
+      0.4268
+     ],
+     "tbin": 3,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "give_up"
+     ],
+     "obs": [
+      true,
+      false,
+      null
+     ],
+     "beliefs": [
+      0.457,
+      0.0031,
+      0.0031
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -2.0,
+     "mean_utility_first_action": 50.86
+    },
+    {
+     "first_action": "give_up",
+     "n_tasks_with_this_first_action": 13,
+     "instance_id": "3498",
+     "task_features": {
+      "diff_chars": "2380",
+      "L1_lint": "1.0",
+      "t_contest_days": "1662.0",
+      "t_log_len_starter": "4.418840607796598",
+      "t_log_len_statement": "7.0431599159883405",
+      "t_n_constraints_lines": "6.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "3.0",
+      "tasklr": "-2.0596120343989135",
+      "difficulty": "-2.4843459927693905",
+      "combtask": "-2.7737579997710524"
+     },
+     "bT": 0.0082,
+     "b0": [
+      0.0067,
+      0.0067,
+      0.0067
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "give_up"
+     ],
+     "obs": [
+      null
+     ],
+     "beliefs": [
+      0.0067
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": 0.0,
+     "mean_utility_first_action": 0.0
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 30,
+     "instance_id": "2834",
+     "task_features": {
+      "diff_chars": "567",
+      "L1_lint": "1.0",
+      "t_contest_days": "1284.0",
+      "t_log_len_starter": "4.836281906951478",
+      "t_log_len_statement": "7.520234556474628",
+      "t_n_constraints_lines": "6.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "-2.033084274235148",
+      "difficulty": "-2.8702308750004297",
+      "combtask": "-3.0329048596910098"
+     },
+     "bT": 0.0082,
+     "b0": [
+      0.0117,
+      0.0117,
+      0.0117
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null
+     ],
+     "beliefs": [
+      0.0,
+      0.0
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -1.0,
+     "mean_utility_first_action": 17.67
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 2,
+     "instance_id": "2854",
+     "task_features": {
+      "diff_chars": "1951",
+      "L1_lint": "1.0",
+      "t_contest_days": "1270.0",
+      "t_log_len_starter": "4.5217885770490405",
+      "t_log_len_statement": "7.445417556701687",
+      "t_n_constraints_lines": "4.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-1.0804274739912625",
+      "difficulty": "-1.6679895035558818",
+      "combtask": "-1.313685211278273"
+     },
+     "bT": 0.5223,
+     "b0": [
+      0.6099,
+      0.6099,
+      0.6099
+     ],
+     "tbin": 3,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      0
+     ],
+     "beliefs": [
+      0.6099
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -5.0,
+     "mean_utility_first_action": 45.0
+    }
+   ]
+  },
+  {
+   "cell": "humanevalfix/gpt_oss_20b",
+   "matched_paper_cell": true,
+   "prior": 0.8329,
+   "first_action_counts": {
+    "verify": 21,
+    "L3": 11,
+    "L2": 9
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.389,
+     1.7969,
+     2.3461
+    ],
+    "lik_task_Y1": [
+     0.2756,
+     0.2244,
+     0.2276,
+     0.2724
+    ],
+    "lik_task_Y0": [
+     0.1385,
+     0.3846,
+     0.3231,
+     0.1538
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     5
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0032,
+       0.2364,
+       0.2524,
+       0.2588,
+       0.2492
+      ],
+      "Y0": [
+       0.1515,
+       0.3333,
+       0.1667,
+       0.1364,
+       0.2121
+      ]
+     }
+    ],
+    "joint": {
+     "lik_len_given_task": {
+      "0": {
+       "Y1": [
+        0.0111,
+        0.1556,
+        0.1889,
+        0.2444,
+        0.4
+       ],
+       "Y0": [
+        0.3077,
+        0.3077,
+        0.0769,
+        0.0769,
+        0.2308
+       ]
+      },
+      "1": {
+       "Y1": [
+        0.0135,
+        0.0946,
+        0.3784,
+        0.2162,
+        0.2973
+       ],
+       "Y0": [
+        0.0345,
+        0.2414,
+        0.2759,
+        0.2069,
+        0.2414
+       ]
+      },
+      "2": {
+       "Y1": [
+        0.0133,
+        0.2667,
+        0.2933,
+        0.2533,
+        0.1733
+       ],
+       "Y0": [
+        0.2,
+        0.44,
+        0.08,
+        0.16,
+        0.12
+       ]
+      },
+      "3": {
+       "Y1": [
+        0.0112,
+        0.4045,
+        0.1685,
+        0.3034,
+        0.1124
+       ],
+       "Y0": [
+        0.2143,
+        0.2143,
+        0.2143,
+        0.0714,
+        0.2857
+       ]
+      }
+     },
+     "critic_likes_by_len": {
+      "0": {
+       "L0_syntax": [
+        0.9968,
+        0.153
+       ],
+       "L2_public_tests": [
+        0.9806,
+        0.1126
+       ],
+       "L3_llm_review": [
+        0.8419,
+        0.0144
+       ]
+      },
+      "1": {
+       "L0_syntax": [
+        0.9999,
+        0.9862
+       ],
+       "L2_public_tests": [
+        0.9995,
+        0.5756
+       ],
+       "L3_llm_review": [
+        0.8891,
+        0.0504
+       ]
+      },
+      "2": {
+       "L0_syntax": [
+        0.9999,
+        0.9735
+       ],
+       "L2_public_tests": [
+        0.9995,
+        0.8532
+       ],
+       "L3_llm_review": [
+        0.8085,
+        0.1799
+       ]
+      },
+      "3": {
+       "L0_syntax": [
+        0.9999,
+        0.9683
+       ],
+       "L2_public_tests": [
+        0.9751,
+        0.9238
+       ],
+       "L3_llm_review": [
+        0.8742,
+        0.0159
+       ]
+      },
+      "4": {
+       "L0_syntax": [
+        0.9999,
+        0.9788
+       ],
+       "L2_public_tests": [
+        0.9615,
+        0.6825
+       ],
+       "L3_llm_review": [
+        0.8061,
+        0.0772
+       ]
+      }
+     }
+    }
+   },
+   "examples": [
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 21,
+     "instance_id": "Python/108",
+     "task_features": {
+      "diff_chars": "182",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.501258210544727",
+      "t_log_len_statement": "5.983936280687191",
+      "t_n_buggy_lines": "7.0",
+      "t_n_doc_examples": "3.0",
+      "t_n_public_tests": "5.0",
+      "tasklr": "1.8199564600774494",
+      "difficulty": "0.9309592067666475",
+      "combtask": "1.4059466657684205"
+     },
+     "bT": 0.7441,
+     "b0": [
+      0.7995,
+      0.7995,
+      0.5326
+     ],
+     "tbin": 1,
+     "pcombos": [
+      2,
+      2,
+      1
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      0
+     ],
+     "beliefs": [
+      0.7995
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -5.0,
+     "mean_utility_first_action": 80.71
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 11,
+     "instance_id": "Python/110",
+     "task_features": {
+      "diff_chars": "269",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.389071729816501",
+      "t_log_len_statement": "6.513230110912307",
+      "t_n_buggy_lines": "11.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "2.0",
+      "tasklr": "0.9359048767925728",
+      "difficulty": "1.8071985209571315",
+      "combtask": "1.4977535325110618"
+     },
+     "bT": 0.7441,
+     "b0": [
+      0.7524,
+      0.7817,
+      0.7995
+     ],
+     "tbin": 1,
+     "pcombos": [
+      3,
+      4,
+      2
+     ],
+     "actions": [
+      "L3",
+      "generate",
+      "L3",
+      "generate",
+      "verify"
+     ],
+     "obs": [
+      false,
+      null,
+      false,
+      null,
+      1
+     ],
+     "beliefs": [
+      0.2797,
+      0.4997,
+      0.1734,
+      0.4513,
+      0.4513
+     ],
+     "patch": [
+      0,
+      0,
+      1,
+      1,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      1
+     ],
+     "utility": 73.0,
+     "mean_utility_first_action": 81.36
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 9,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "144",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "1.6831740695023703",
+      "difficulty": "1.7730009186919808",
+      "combtask": "1.9218094382885567"
+     },
+     "bT": 0.7783,
+     "b0": [
+      0.9279,
+      0.9279,
+      0.9279
+     ],
+     "tbin": 2,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9378,
+      0.9378
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 80.44
+    }
+   ]
+  },
+  {
+   "cell": "humanevalfix/qwen3_coder",
+   "matched_paper_cell": true,
+   "prior": 0.9623,
+   "first_action_counts": {
+    "L3": 10,
+    "L2": 22,
+    "verify": 9
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     3.0018,
+     3.4441,
+     4.1017
+    ],
+    "lik_task_Y1": [
+     0.2556,
+     0.2556,
+     0.2472,
+     0.2417
+    ],
+    "lik_task_Y0": [
+     0.1765,
+     0.1765,
+     0.1765,
+     0.4706
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2528,
+       0.2639,
+       0.2444,
+       0.2389
+      ],
+      "Y0": [
+       0.2353,
+       0.0588,
+       0.2353,
+       0.4706
+      ]
+     }
+    ],
+    "joint": {
+     "lik_len_given_task": {
+      "0": {
+       "Y1": [
+        0.1053,
+        0.2316,
+        0.1789,
+        0.4842
+       ],
+       "Y0": [
+        0.1667,
+        0.1667,
+        0.5,
+        0.1667
+       ]
+      },
+      "1": {
+       "Y1": [
+        0.1368,
+        0.2842,
+        0.3263,
+        0.2526
+       ],
+       "Y0": [
+        0.1667,
+        0.1667,
+        0.1667,
+        0.5
+       ]
+      },
+      "2": {
+       "Y1": [
+        0.3043,
+        0.2717,
+        0.3587,
+        0.0652
+       ],
+       "Y0": [
+        0.3333,
+        0.1667,
+        0.3333,
+        0.1667
+       ]
+      },
+      "3": {
+       "Y1": [
+        0.4778,
+        0.2667,
+        0.1111,
+        0.1444
+       ],
+       "Y0": [
+        0.2727,
+        0.0909,
+        0.0909,
+        0.5455
+       ]
+      }
+     },
+     "critic_likes_by_len": {
+      "0": {
+       "L0_syntax": [
+        0.9999,
+        0.9733
+       ],
+       "L2_public_tests": [
+        0.9999,
+        0.08
+       ],
+       "L3_llm_review": [
+        0.9998,
+        0.08
+       ]
+      },
+      "1": {
+       "L0_syntax": [
+        0.9999,
+        0.9333
+       ],
+       "L2_public_tests": [
+        0.9999,
+        0.2
+       ],
+       "L3_llm_review": [
+        0.9685,
+        0.2
+       ]
+      },
+      "2": {
+       "L0_syntax": [
+        0.9999,
+        0.9733
+       ],
+       "L2_public_tests": [
+        0.9999,
+        0.08
+       ],
+       "L3_llm_review": [
+        0.9997,
+        0.08
+       ]
+      },
+      "3": {
+       "L0_syntax": [
+        0.9999,
+        0.9852
+       ],
+       "L2_public_tests": [
+        0.9999,
+        0.2667
+       ],
+       "L3_llm_review": [
+        0.9997,
+        0.2667
+       ]
+      }
+     }
+    }
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 10,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "584",
+      "L1_lint": "1.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "3.2989179472282433",
+      "difficulty": "3.452570428605235",
+      "combtask": "3.610111395651149"
+     },
+     "bT": 0.9728,
+     "b0": [
+      0.9746,
+      0.9746,
+      0.9746
+     ],
+     "tbin": 2,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9979,
+      0.9979
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 81.8
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 22,
+     "instance_id": "Python/110",
+     "task_features": {
+      "diff_chars": "1140",
+      "L1_lint": "1.0",
+      "t_log_len_buggy": "5.389071729816501",
+      "t_log_len_statement": "6.513230110912307",
+      "t_n_buggy_lines": "11.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "2.0",
+      "tasklr": "2.551648754518446",
+      "difficulty": "3.4867680308703854",
+      "combtask": "3.186055489873654"
+     },
+     "bT": 0.9736,
+     "b0": [
+      0.9491,
+      0.9491,
+      0.9491
+     ],
+     "tbin": 1,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "L2",
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9859,
+      0.9962,
+      0.9962
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 93.64
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 9,
+     "instance_id": "Python/115",
+     "task_features": {
+      "diff_chars": "1111",
+      "L1_lint": "1.0",
+      "t_log_len_buggy": "4.174387269895637",
+      "t_log_len_statement": "6.957497370876951",
+      "t_n_buggy_lines": "1.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "5.0",
+      "tasklr": "2.689139432768713",
+      "difficulty": "2.686276206326455",
+      "combtask": "2.447644909525458"
+     },
+     "bT": 0.9736,
+     "b0": [
+      0.9908,
+      0.9908,
+      0.9908
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9908
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 83.89
+    }
+   ]
+  }
+ ],
+ "calK_len": [
+  {
+   "cell": "humanevalfix/gpt_oss_20b",
+   "matched_paper_cell": true,
+   "prior": 0.8329,
+   "first_action_counts": {
+    "L0": 12,
+    "L3": 22,
+    "L2": 6,
+    "generate": 1
+   },
+   "signal_model": {
+    "task": null,
+    "K": 4,
+    "n_task_bins": 1,
+    "task_edges": null,
+    "lik_task_Y1": [
+     1.0
+    ],
+    "lik_task_Y0": [
+     1.0
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     5
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0032,
+       0.2364,
+       0.2524,
+       0.2588,
+       0.2492
+      ],
+      "Y0": [
+       0.1515,
+       0.3333,
+       0.1667,
+       0.1364,
+       0.2121
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L0",
+     "n_tasks_with_this_first_action": 12,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "144",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "1.6831740695023703",
+      "difficulty": "1.7730009186919808",
+      "combtask": "1.9218094382885567"
+     },
+     "bT": 0.8329,
+     "b0": [
+      0.883,
+      0.883,
+      0.883
+     ],
+     "tbin": 0,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L0",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8994,
+      0.9341,
+      0.9341
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 67.92
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 22,
+     "instance_id": "Python/115",
+     "task_features": {
+      "diff_chars": "108",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.174387269895637",
+      "t_log_len_statement": "6.957497370876951",
+      "t_n_buggy_lines": "1.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "5.0",
+      "tasklr": "1.0733955550428398",
+      "difficulty": "1.006706696413201",
+      "combtask": "0.7593429521628661"
+     },
+     "bT": 0.8329,
+     "b0": [
+      0.7795,
+      0.8541,
+      0.883
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      4,
+      2
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.974,
+      0.974
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      0,
+      0
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 87.18
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 6,
+     "instance_id": "Python/110",
+     "task_features": {
+      "diff_chars": "269",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.389071729816501",
+      "t_log_len_statement": "6.513230110912307",
+      "t_n_buggy_lines": "11.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "2.0",
+      "tasklr": "0.9359048767925728",
+      "difficulty": "1.8071985209571315",
+      "combtask": "1.4977535325110618"
+     },
+     "bT": 0.8329,
+     "b0": [
+      0.9044,
+      0.8541,
+      0.883
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      4,
+      2
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      0
+     ],
+     "beliefs": [
+      0.9374,
+      0.9374
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      1
+     ],
+     "utility": -6.0,
+     "mean_utility_first_action": 77.33
+    },
+    {
+     "first_action": "generate",
+     "n_tasks_with_this_first_action": 1,
+     "instance_id": "Python/142",
+     "task_features": {
+      "diff_chars": "0",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.4638318050256105",
+      "t_log_len_statement": "6.411818267709897",
+      "t_n_buggy_lines": "9.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.304546193136371",
+      "difficulty": "1.332385682860291",
+      "combtask": "1.3230330516496265"
+     },
+     "bT": 0.8329,
+     "b0": [
+      0.0951,
+      0.0951,
+      0.0951
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "generate",
+      "generate",
+      "give_up"
+     ],
+     "obs": [
+      null,
+      null,
+      null
+     ],
+     "beliefs": [
+      0.0099,
+      0.0075,
+      0.0075
+     ],
+     "patch": [
+      0,
+      1,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -20.0,
+     "mean_utility_first_action": -20.0
+    }
+   ]
+  },
+  {
+   "cell": "humanevalfix/qwen25_32b",
+   "matched_paper_cell": true,
+   "prior": 0.69,
+   "first_action_counts": {
+    "verify": 24,
+    "L2": 7,
+    "L3": 10
+   },
+   "signal_model": {
+    "task": null,
+    "K": 4,
+    "n_task_bins": 1,
+    "task_edges": null,
+    "lik_task_Y1": [
+     1.0
+    ],
+    "lik_task_Y0": [
+     1.0
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2124,
+       0.2355,
+       0.2741,
+       0.278
+      ],
+      "Y0": [
+       0.3475,
+       0.2881,
+       0.1949,
+       0.1695
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 24,
+     "instance_id": "Python/108",
+     "task_features": {
+      "diff_chars": "268",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.501258210544727",
+      "t_log_len_statement": "5.983936280687191",
+      "t_n_buggy_lines": "7.0",
+      "t_n_doc_examples": "3.0",
+      "t_n_public_tests": "5.0",
+      "tasklr": "0.9836425724205375",
+      "difficulty": "0.02812826124926815",
+      "combtask": "0.4932030106600811"
+     },
+     "bT": 0.69,
+     "b0": [
+      0.785,
+      0.785,
+      0.7579
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      3,
+      2
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.785
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      0
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 70.0
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 7,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "172",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "0.8468601818454584",
+      "difficulty": "0.8701699731746015",
+      "combtask": "1.0090657831802172"
+     },
+     "bT": 0.69,
+     "b0": [
+      0.6453,
+      0.7579,
+      0.6453
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      2,
+      1
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9359,
+      0.9359
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 80.29
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 10,
+     "instance_id": "Python/112",
+     "task_features": {
+      "diff_chars": "109",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.430816798843313",
+      "t_log_len_statement": "6.395261598115449",
+      "t_n_buggy_lines": "2.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "3.0",
+      "tasklr": "0.28154748049165557",
+      "difficulty": "0.9525360606234661",
+      "combtask": "0.42439042050750375"
+     },
+     "bT": 0.69,
+     "b0": [
+      0.5764,
+      0.5764,
+      0.5764
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9324,
+      0.9324
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 64.1
+    }
+   ]
+  },
+  {
+   "cell": "humaneval/qwen25_32b",
+   "matched_paper_cell": true,
+   "prior": 0.8383,
+   "first_action_counts": {
+    "L3": 5,
+    "verify": 24,
+    "L2": 12
+   },
+   "signal_model": {
+    "task": null,
+    "K": 4,
+    "n_task_bins": 1,
+    "task_edges": null,
+    "lik_task_Y1": [
+     1.0
+    ],
+    "lik_task_Y0": [
+     1.0
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2484,
+       0.242,
+       0.2643,
+       0.2452
+      ],
+      "Y0": [
+       0.2698,
+       0.3016,
+       0.1587,
+       0.2698
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 5,
+     "instance_id": "HumanEval/108",
+     "task_features": {
+      "diff_chars": "284",
+      "L1_lint": "0.0",
+      "t_log_len_docstring": "5.799092654460526",
+      "t_log_len_statement": "5.983936280687191",
+      "t_n_args": "1.0",
+      "t_n_doc_examples": "3.0",
+      "t_n_public_tests": "8.0",
+      "t_priv_n_hidden_tests": "200.0",
+      "tasklr": "1.5868128622739888",
+      "difficulty": "2.1898638199497453",
+      "combtask": "2.2452416530823456"
+     },
+     "bT": 0.8383,
+     "b0": [
+      0.8062,
+      0.8062,
+      0.8062
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8957,
+      0.9721,
+      0.9721
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 69.6
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 24,
+     "instance_id": "HumanEval/103",
+     "task_features": {
+      "diff_chars": "103",
+      "L1_lint": "0.0",
+      "t_log_len_docstring": "5.908082938168931",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_args": "2.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "12.0",
+      "t_priv_n_hidden_tests": "200.0",
+      "tasklr": "1.4202482951346955",
+      "difficulty": "1.6799989769677999",
+      "combtask": "1.4318658214249125"
+     },
+     "bT": 0.8383,
+     "b0": [
+      0.8267,
+      0.8267,
+      0.8267
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.8267
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 65.83
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 12,
+     "instance_id": "HumanEval/118",
+     "task_features": {
+      "diff_chars": "452",
+      "L1_lint": "0.0",
+      "t_log_len_docstring": "6.175867270105761",
+      "t_log_len_statement": "6.349138991379798",
+      "t_n_args": "1.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "13.0",
+      "t_priv_n_hidden_tests": "200.0",
+      "tasklr": "1.4187853652619926",
+      "difficulty": "0.8501234677694005",
+      "combtask": "0.5790576180027704"
+     },
+     "bT": 0.8383,
+     "b0": [
+      0.8962,
+      0.8962,
+      0.8062
+     ],
+     "tbin": 0,
+     "pcombos": [
+      2,
+      2,
+      1
+     ],
+     "actions": [
+      "L2",
+      "L3",
+      "generate",
+      "L2",
+      "generate",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      false,
+      false,
+      null,
+      false,
+      null,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.0354,
+      0.0095,
+      0.2327,
+      0.0013,
+      0.1218,
+      0.36,
+      0.36
+     ],
+     "patch": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      1
+     ],
+     "utility": 71.0,
+     "mean_utility_first_action": 92.08
+    }
+   ]
+  },
+  {
+   "cell": "humanevalfix/qwen3_coder",
+   "matched_paper_cell": true,
+   "prior": 0.9623,
+   "first_action_counts": {
+    "L2": 20,
+    "L3": 17,
+    "verify": 4
+   },
+   "signal_model": {
+    "task": null,
+    "K": 4,
+    "n_task_bins": 1,
+    "task_edges": null,
+    "lik_task_Y1": [
+     1.0
+    ],
+    "lik_task_Y0": [
+     1.0
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.2528,
+       0.2639,
+       0.2444,
+       0.2389
+      ],
+      "Y0": [
+       0.2353,
+       0.0588,
+       0.2353,
+       0.4706
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 20,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "584",
+      "L1_lint": "1.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "3.2989179472282433",
+      "difficulty": "3.452570428605235",
+      "combtask": "3.610111395651149"
+     },
+     "bT": 0.9623,
+     "b0": [
+      0.9636,
+      0.9636,
+      0.9636
+     ],
+     "tbin": 0,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9925,
+      0.9925
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 89.0
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 17,
+     "instance_id": "Python/110",
+     "task_features": {
+      "diff_chars": "1140",
+      "L1_lint": "1.0",
+      "t_log_len_buggy": "5.389071729816501",
+      "t_log_len_statement": "6.513230110912307",
+      "t_n_buggy_lines": "11.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "2.0",
+      "tasklr": "2.551648754518446",
+      "difficulty": "3.4867680308703854",
+      "combtask": "3.186055489873654"
+     },
+     "bT": 0.9623,
+     "b0": [
+      0.9283,
+      0.9283,
+      0.9283
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9846,
+      0.9969,
+      0.9969
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 86.18
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 4,
+     "instance_id": "Python/135",
+     "task_features": {
+      "diff_chars": "466",
+      "L1_lint": "1.0",
+      "t_log_len_buggy": "4.795790545596741",
+      "t_log_len_statement": "5.8916442118257715",
+      "t_n_buggy_lines": "8.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "2.0",
+      "tasklr": "2.873362678391672",
+      "difficulty": "3.104306194519363",
+      "combtask": "3.0631514842153402"
+     },
+     "bT": 0.9623,
+     "b0": [
+      0.9913,
+      0.9913,
+      0.9913
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9913
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 95.0
+    }
+   ]
+  }
+ ],
+ "calK_task": [
+  {
+   "cell": "lcb_easy/qwen25_32b",
+   "matched_paper_cell": true,
+   "prior": 0.8623,
+   "first_action_counts": {
+    "L2": 10,
+    "L3": 12,
+    "verify": 12
+   },
+   "signal_model": {
+    "task": "tasklr",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.3967,
+     2.3215,
+     3.207
+    ],
+    "lik_task_Y1": [
+     0.2594,
+     0.2669,
+     0.2519,
+     0.2218
+    ],
+    "lik_task_Y0": [
+     0.2444,
+     0.1333,
+     0.2222,
+     0.4
+    ],
+    "patch": [],
+    "n_patch_bins": [],
+    "lik_patch": []
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 10,
+     "instance_id": "2831",
+     "task_features": {
+      "diff_chars": "515",
+      "L1_lint": "1.0",
+      "t_contest_days": "1271.0",
+      "t_log_len_starter": "4.430816798843313",
+      "t_log_len_statement": "7.3777589082278725",
+      "t_n_constraints_lines": "5.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "0.9094939586992286",
+      "difficulty": "2.073251637497992",
+      "combtask": "1.1654071505979742"
+     },
+     "bT": 0.8692,
+     "b0": [
+      0.8692,
+      0.8692,
+      0.8692
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9824,
+      0.9824
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 94.0
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 12,
+     "instance_id": "2812",
+     "task_features": {
+      "diff_chars": "104",
+      "L1_lint": "1.0",
+      "t_contest_days": "1285.0",
+      "t_log_len_starter": "4.465908118654584",
+      "t_log_len_statement": "6.948897222313312",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "3.5685029849976706",
+      "difficulty": "3.0329326989759853",
+      "combtask": "4.135624772093007"
+     },
+     "bT": 0.7764,
+     "b0": [
+      0.7764,
+      0.7764,
+      0.7764
+     ],
+     "tbin": 3,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9289,
+      0.9289
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 93.92
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 12,
+     "instance_id": "2870",
+     "task_features": {
+      "diff_chars": "484",
+      "L1_lint": "1.0",
+      "t_contest_days": "1284.0",
+      "t_log_len_starter": "4.430816798843313",
+      "t_log_len_statement": "6.799055862058796",
+      "t_n_constraints_lines": "4.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "1.0",
+      "tasklr": "2.441545333389067",
+      "difficulty": "1.2867042689145178",
+      "combtask": "2.2428357666847565"
+     },
+     "bT": 0.8765,
+     "b0": [
+      0.8765,
+      0.8765,
+      0.8765
+     ],
+     "tbin": 2,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.8765
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 86.67
+    }
+   ]
+  },
+  {
+   "cell": "codecontests/qwen3_coder",
+   "matched_paper_cell": true,
+   "prior": 0.2126,
+   "first_action_counts": {
+    "L2": 12,
+    "L3": 16
+   },
+   "signal_model": {
+    "task": "tasklr",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     -2.7997,
+     -1.3911,
+     -0.6137
+    ],
+    "lik_task_Y1": [
+     0.1228,
+     0.2632,
+     0.2982,
+     0.3158
+    ],
+    "lik_task_Y0": [
+     0.2857,
+     0.2463,
+     0.2365,
+     0.2315
+    ],
+    "patch": [],
+    "n_patch_bins": [],
+    "lik_patch": []
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 12,
+     "instance_id": "1581_A. CQXYM Count Permutations",
+     "task_features": {
+      "diff_chars": "300",
+      "L1_lint": "1.0",
+      "t_cc_difficulty": "7.0",
+      "t_cf_contest_id": "1581.0",
+      "t_cf_index": "0.0",
+      "t_cf_rating": "800.0",
+      "t_log_len_statement": "7.528869256642251",
+      "t_log_mem": "19.360688002443837",
+      "t_n_public_tests": "1.0",
+      "t_n_tags": "3.0",
+      "t_priv_n_hidden_tests": "208.0",
+      "t_time_limit_s": "1.0",
+      "tasklr": "-1.1892201190490577",
+      "difficulty": "-2.1917897047630275",
+      "combtask": "-1.8764214418815368"
+     },
+     "bT": 0.254,
+     "b0": [
+      0.254,
+      0.254,
+      0.254
+     ],
+     "tbin": 2,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "generate",
+      "L2",
+      "generate",
+      "L3",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null,
+      false,
+      null,
+      false,
+      null
+     ],
+     "beliefs": [
+      0.0074,
+      0.1448,
+      0.0037,
+      0.1433,
+      0.0033,
+      0.0033
+     ],
+     "patch": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -23.0,
+     "mean_utility_first_action": 14.92
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 16,
+     "instance_id": "1579_B. Shifting Sort",
+     "task_features": {
+      "diff_chars": "767",
+      "L1_lint": "1.0",
+      "t_cc_difficulty": "8.0",
+      "t_cf_contest_id": "1579.0",
+      "t_cf_index": "1.0",
+      "t_cf_rating": "1100.0",
+      "t_log_len_statement": "8.18423477409482",
+      "t_log_mem": "19.360688002443837",
+      "t_n_public_tests": "1.0",
+      "t_n_tags": "2.0",
+      "t_priv_n_hidden_tests": "201.0",
+      "t_time_limit_s": "2.0",
+      "tasklr": "-1.477268567359742",
+      "difficulty": "-1.6089682917731363",
+      "combtask": "-1.582030889419194"
+     },
+     "bT": 0.2239,
+     "b0": [
+      0.2239,
+      0.2239,
+      0.2239
+     ],
+     "tbin": 1,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L3",
+      "generate",
+      "L2",
+      "generate",
+      "L3",
+      "give_up"
+     ],
+     "obs": [
+      false,
+      null,
+      false,
+      null,
+      false,
+      null
+     ],
+     "beliefs": [
+      0.0057,
+      0.1441,
+      0.0036,
+      0.1433,
+      0.0033,
+      0.0033
+     ],
+     "patch": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -23.0,
+     "mean_utility_first_action": 21.5
+    }
+   ]
+  },
+  {
+   "cell": "humanevalfix/gpt_oss_20b",
+   "matched_paper_cell": true,
+   "prior": 0.8329,
+   "first_action_counts": {
+    "L3": 33,
+    "L2": 8
+   },
+   "signal_model": {
+    "task": "tasklr",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.3985,
+     1.6727,
+     2.0215
+    ],
+    "lik_task_Y1": [
+     0.2628,
+     0.2532,
+     0.2372,
+     0.2468
+    ],
+    "lik_task_Y0": [
+     0.2,
+     0.2462,
+     0.2769,
+     0.2769
+    ],
+    "patch": [],
+    "n_patch_bins": [],
+    "lik_patch": []
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 33,
+     "instance_id": "Python/103",
+     "task_features": {
+      "diff_chars": "144",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "4.962844630259907",
+      "t_log_len_statement": "6.089044875446846",
+      "t_n_buggy_lines": "6.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "4.0",
+      "tasklr": "1.6831740695023703",
+      "difficulty": "1.7730009186919808",
+      "combtask": "1.9218094382885567"
+     },
+     "bT": 0.8102,
+     "b0": [
+      0.8102,
+      0.8102,
+      0.8102
+     ],
+     "tbin": 2,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9784,
+      0.9784
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 76.85
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 8,
+     "instance_id": "Python/119",
+     "task_features": {
+      "diff_chars": "451",
+      "L1_lint": "0.0",
+      "t_log_len_buggy": "5.8805329864007",
+      "t_log_len_statement": "6.464588303689961",
+      "t_n_buggy_lines": "13.0",
+      "t_n_doc_examples": "0.0",
+      "t_n_public_tests": "2.0",
+      "tasklr": "1.4878340381785298",
+      "difficulty": "0.9655187596328181",
+      "combtask": "1.0460716223046798"
+     },
+     "bT": 0.8368,
+     "b0": [
+      0.8368,
+      0.8368,
+      0.8368
+     ],
+     "tbin": 1,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8904,
+      0.8904
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 81.25
+    }
+   ]
+  },
+  {
+   "cell": "lcb_hard/qwen25_32b",
+   "matched_paper_cell": true,
+   "prior": 0.1043,
+   "first_action_counts": {
+    "L2": 23,
+    "give_up": 3
+   },
+   "signal_model": {
+    "task": "tasklr",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     -3.1611,
+     -2.4044,
+     -1.8015
+    ],
+    "lik_task_Y1": [
+     0.037,
+     0.2593,
+     0.2222,
+     0.4815
+    ],
+    "lik_task_Y0": [
+     0.2775,
+     0.2488,
+     0.2536,
+     0.2201
+    ],
+    "patch": [],
+    "n_patch_bins": [],
+    "lik_patch": []
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 23,
+     "instance_id": "2879",
+     "task_features": {
+      "diff_chars": "1034",
+      "L1_lint": "1.0",
+      "t_contest_days": "1390.0",
+      "t_log_len_starter": "4.356708826689592",
+      "t_log_len_statement": "7.509335266016592",
+      "t_n_constraints_lines": "5.0",
+      "t_n_public_tests": "3.0",
+      "t_release": "1.0",
+      "tasklr": "-2.5570624639657",
+      "difficulty": "-2.8204456558990536",
+      "combtask": "-2.948329983416674"
+     },
+     "bT": 0.1083,
+     "b0": [
+      0.1083,
+      0.1083,
+      0.1083
+     ],
+     "tbin": 1,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      0
+     ],
+     "beliefs": [
+      0.3088,
+      0.3088
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": -6.0,
+     "mean_utility_first_action": 5.3
+    },
+    {
+     "first_action": "give_up",
+     "n_tasks_with_this_first_action": 3,
+     "instance_id": "3414",
+     "task_features": {
+      "diff_chars": "697",
+      "L1_lint": "1.0",
+      "t_contest_days": "1599.0",
+      "t_log_len_starter": "4.276666119016055",
+      "t_log_len_statement": "7.637234388789473",
+      "t_n_constraints_lines": "2.0",
+      "t_n_public_tests": "2.0",
+      "t_release": "2.0",
+      "tasklr": "-3.718870797403836",
+      "difficulty": "-2.6536891513336505",
+      "combtask": "-3.2861311891535934"
+     },
+     "bT": 0.0153,
+     "b0": [
+      0.0153,
+      0.0153,
+      0.0153
+     ],
+     "tbin": 0,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "give_up"
+     ],
+     "obs": [
+      null
+     ],
+     "beliefs": [
+      0.0153
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      0,
+      0,
+      0
+     ],
+     "utility": 0.0,
+     "mean_utility_first_action": 0.0
+    }
+   ]
+  }
+ ],
+ "g201_comb": [
+  {
+   "cell": "mbpp/sonnet45",
+   "matched_paper_cell": true,
+   "prior": 0.8214,
+   "first_action_counts": {
+    "generate": 37,
+    "L3": 22,
+    "verify": 28,
+    "L2": 8
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.4306,
+     2.097,
+     2.8462
+    ],
+    "lik_task_Y1": [
+     0.2393,
+     0.255,
+     0.2507,
+     0.255
+    ],
+    "lik_task_Y0": [
+     0.3032,
+     0.2323,
+     0.2323,
+     0.2323
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.3006,
+       0.2792,
+       0.2236,
+       0.1966
+      ],
+      "Y0": [
+       0.0903,
+       0.0839,
+       0.3419,
+       0.4839
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "generate",
+     "n_tasks_with_this_first_action": 37,
+     "instance_id": "111",
+     "task_features": {
+      "diff_chars": "328",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.219507705176107",
+      "t_log_len_tests": "5.802118375377063",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.7252952383392866",
+      "difficulty": "2.04238777246204",
+      "combtask": "2.393613762195436"
+     },
+     "bT": 0.8323,
+     "b0": [
+      0.6685,
+      0.6685,
+      0.6685
+     ],
+     "tbin": 2,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "generate",
+      "L3",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      null,
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.6685,
+      0.7347,
+      0.7911,
+      0.7911
+     ],
+     "patch": [
+      0,
+      1,
+      1,
+      1
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 83.0,
+     "mean_utility_first_action": 54.0
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 22,
+     "instance_id": "142",
+     "task_features": {
+      "diff_chars": "200",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.61512051684126",
+      "t_log_len_tests": "5.480638923341991",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.484217811669832",
+      "difficulty": "2.7960866430769356",
+      "combtask": "2.3284011886513065"
+     },
+     "bT": 0.8323,
+     "b0": [
+      0.7645,
+      0.7645,
+      0.7645
+     ],
+     "tbin": 2,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8168,
+      0.8591,
+      0.8591
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 74.82
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 28,
+     "instance_id": "101",
+     "task_features": {
+      "diff_chars": "46",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.430816798843313",
+      "t_log_len_tests": "4.852030263919617",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.4686615067170645",
+      "difficulty": "1.5917433818301885",
+      "combtask": "1.864197556229877"
+     },
+     "bT": 0.8347,
+     "b0": [
+      0.9438,
+      0.9438,
+      0.9438
+     ],
+     "tbin": 1,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9438
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 87.86
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 8,
+     "instance_id": "128",
+     "task_features": {
+      "diff_chars": "96",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.532599493153256",
+      "t_log_len_tests": "5.327876168789581",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.4983935265054233",
+      "difficulty": "1.8297590863019022",
+      "combtask": "1.394776520679947"
+     },
+     "bT": 0.784,
+     "b0": [
+      0.9236,
+      0.9236,
+      0.9236
+     ],
+     "tbin": 0,
+     "pcombos": [
+      1,
+      1,
+      1
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9429,
+      0.9429
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 78.88
+    }
+   ]
+  },
+  {
+   "cell": "mbpp/qwen3_coder",
+   "matched_paper_cell": true,
+   "prior": 0.7798,
+   "first_action_counts": {
+    "L3": 50,
+    "verify": 11,
+    "L2": 23,
+    "generate": 11
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.0463,
+     1.745,
+     2.4265
+    ],
+    "lik_task_Y1": [
+     0.2182,
+     0.2512,
+     0.2622,
+     0.2684
+    ],
+    "lik_task_Y0": [
+     0.3626,
+     0.2418,
+     0.1923,
+     0.2033
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     4
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.3061,
+       0.2684,
+       0.2402,
+       0.1852
+      ],
+      "Y0": [
+       0.0824,
+       0.1923,
+       0.2473,
+       0.478
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 50,
+     "instance_id": "101",
+     "task_features": {
+      "diff_chars": "324",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.430816798843313",
+      "t_log_len_tests": "4.852030263919617",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.2072489474228814",
+      "difficulty": "1.1980990178856654",
+      "combtask": "1.469621632632997"
+     },
+     "bT": 0.7863,
+     "b0": [
+      0.7814,
+      0.7814,
+      0.7814
+     ],
+     "tbin": 1,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L3",
+      "generate",
+      "L3",
+      "generate",
+      "verify"
+     ],
+     "obs": [
+      false,
+      null,
+      false,
+      null,
+      1
+     ],
+     "beliefs": [
+      0.5502,
+      0.7814,
+      0.5502,
+      0.7814,
+      0.7814
+     ],
+     "patch": [
+      0,
+      0,
+      1,
+      1,
+      2
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 73.0,
+     "mean_utility_first_action": 67.76
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 11,
+     "instance_id": "106",
+     "task_features": {
+      "diff_chars": "74",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.143134726391533",
+      "t_log_len_tests": "5.1647859739235145",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.3955305171507133",
+      "difficulty": "2.3833345402039683",
+      "combtask": "2.6980310281715316"
+     },
+     "bT": 0.8238,
+     "b0": [
+      0.9456,
+      0.9456,
+      0.9456
+     ],
+     "tbin": 3,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9456
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 95.0
+    },
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 23,
+     "instance_id": "139",
+     "task_features": {
+      "diff_chars": "68",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.02535169073515",
+      "t_log_len_tests": "5.43372200355424",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.4957610140591102",
+      "difficulty": "1.5958866124425422",
+      "combtask": "1.7380285377763096"
+     },
+     "bT": 0.7863,
+     "b0": [
+      0.9318,
+      0.9318,
+      0.9318
+     ],
+     "tbin": 1,
+     "pcombos": [
+      0,
+      0,
+      0
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9509,
+      0.9509
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 75.7
+    },
+    {
+     "first_action": "generate",
+     "n_tasks_with_this_first_action": 11,
+     "instance_id": "237",
+     "task_features": {
+      "diff_chars": "523",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.976733742420574",
+      "t_log_len_tests": "5.82600010738045",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.1074522241800802",
+      "difficulty": "0.5969371427887713",
+      "combtask": "0.29043676785226213"
+     },
+     "bT": 0.6806,
+     "b0": [
+      0.4523,
+      0.4523,
+      0.4523
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      3,
+      3
+     ],
+     "actions": [
+      "generate",
+      "L3",
+      "generate",
+      "verify"
+     ],
+     "obs": [
+      null,
+      false,
+      null,
+      0
+     ],
+     "beliefs": [
+      0.4523,
+      0.2203,
+      0.4523,
+      0.4523
+     ],
+     "patch": [
+      0,
+      1,
+      1,
+      2
+     ],
+     "Y_fresh": [
+      0,
+      1,
+      0
+     ],
+     "utility": -26.0,
+     "mean_utility_first_action": 33.45
+    }
+   ]
+  },
+  {
+   "cell": "mbpp/gpt_oss_20b",
+   "matched_paper_cell": true,
+   "prior": 0.8014,
+   "first_action_counts": {
+    "L2": 37,
+    "L3": 45,
+    "verify": 13
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.2233,
+     1.9036,
+     2.6438
+    ],
+    "lik_task_Y1": [
+     0.219,
+     0.2628,
+     0.2657,
+     0.2526
+    ],
+    "lik_task_Y0": [
+     0.3779,
+     0.2035,
+     0.1744,
+     0.2442
+    ],
+    "patch": [
+     "len"
+    ],
+    "n_patch_bins": [
+     5
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0015,
+       0.2799,
+       0.277,
+       0.2332,
+       0.2085
+      ],
+      "Y0": [
+       0.104,
+       0.104,
+       0.1214,
+       0.2948,
+       0.3757
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L2",
+     "n_tasks_with_this_first_action": 37,
+     "instance_id": "106",
+     "task_features": {
+      "diff_chars": "170",
+      "L1_lint": "0.0",
+      "t_log_len_statement": "4.143134726391533",
+      "t_log_len_tests": "5.1647859739235145",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.5278110221434886",
+      "difficulty": "2.5833331635268237",
+      "combtask": "2.8957933887848"
+     },
+     "bT": 0.8067,
+     "b0": [
+      0.905,
+      0.905,
+      0.905
+     ],
+     "tbin": 3,
+     "pcombos": [
+      2,
+      2,
+      2
+     ],
+     "actions": [
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9225,
+      0.9225
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 79.03
+    },
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 45,
+     "instance_id": "111",
+     "task_features": {
+      "diff_chars": "490",
+      "L1_lint": "0.0",
+      "t_log_len_statement": "4.219507705176107",
+      "t_log_len_tests": "5.802118375377063",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.5961631840378787",
+      "difficulty": "1.848742031840372",
+      "combtask": "2.1968001992118245"
+     },
+     "bT": 0.8601,
+     "b0": [
+      0.7733,
+      0.7733,
+      0.8295
+     ],
+     "tbin": 2,
+     "pcombos": [
+      4,
+      4,
+      3
+     ],
+     "actions": [
+      "L3",
+      "L2",
+      "verify"
+     ],
+     "obs": [
+      true,
+      true,
+      1
+     ],
+     "beliefs": [
+      0.8391,
+      0.867,
+      0.867
+     ],
+     "patch": [
+      0,
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 93.0,
+     "mean_utility_first_action": 79.22
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 13,
+     "instance_id": "101",
+     "task_features": {
+      "diff_chars": "111",
+      "L1_lint": "0.0",
+      "t_log_len_statement": "4.430816798843313",
+      "t_log_len_tests": "4.852030263919617",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.3395294524156567",
+      "difficulty": "1.3980976412085204",
+      "combtask": "1.6673839932462655"
+     },
+     "bT": 0.839,
+     "b0": [
+      0.9334,
+      0.743,
+      0.8048
+     ],
+     "tbin": 1,
+     "pcombos": [
+      1,
+      4,
+      3
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9334
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 95.0
+    }
+   ]
+  },
+  {
+   "cell": "mbpp/gpt5_mini",
+   "matched_paper_cell": true,
+   "prior": 0.8085,
+   "first_action_counts": {
+    "L3": 45,
+    "generate": 28,
+    "verify": 22
+   },
+   "signal_model": {
+    "task": "combtask",
+    "K": 4,
+    "n_task_bins": 4,
+    "task_edges": [
+     1.2725,
+     1.9749,
+     2.7307
+    ],
+    "lik_task_Y1": [
+     0.2301,
+     0.2663,
+     0.2518,
+     0.2518
+    ],
+    "lik_task_Y0": [
+     0.3373,
+     0.1867,
+     0.2289,
+     0.247
+    ],
+    "patch": [
+     "len",
+     "lint"
+    ],
+    "n_patch_bins": [
+     5,
+     2
+    ],
+    "lik_patch": [
+     {
+      "Y1": [
+       0.0014,
+       0.2934,
+       0.2587,
+       0.2486,
+       0.198
+      ],
+      "Y0": [
+       0.0359,
+       0.0778,
+       0.1916,
+       0.2395,
+       0.4551
+      ]
+     },
+     {
+      "Y1": [
+       0.0015,
+       0.9985
+      ],
+      "Y0": [
+       0.0366,
+       0.9634
+      ]
+     }
+    ]
+   },
+   "examples": [
+    {
+     "first_action": "L3",
+     "n_tasks_with_this_first_action": 45,
+     "instance_id": "101",
+     "task_features": {
+      "diff_chars": "388",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.430816798843313",
+      "t_log_len_tests": "4.852030263919617",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.3843482857665068",
+      "difficulty": "1.4661182420753376",
+      "combtask": "1.7345829496184217"
+     },
+     "bT": 0.8575,
+     "b0": [
+      0.8662,
+      0.8662,
+      0.7307
+     ],
+     "tbin": 1,
+     "pcombos": [
+      7,
+      7,
+      9
+     ],
+     "actions": [
+      "L3",
+      "verify"
+     ],
+     "obs": [
+      true,
+      1
+     ],
+     "beliefs": [
+      0.9027,
+      0.9027
+     ],
+     "patch": [
+      0,
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 94.0,
+     "mean_utility_first_action": 70.78
+    },
+    {
+     "first_action": "generate",
+     "n_tasks_with_this_first_action": 28,
+     "instance_id": "111",
+     "task_features": {
+      "diff_chars": "1000",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.219507705176107",
+      "t_log_len_tests": "5.802118375377063",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.6409820173887288",
+      "difficulty": "1.9167626327071892",
+      "combtask": "2.2639991555839805"
+     },
+     "bT": 0.8228,
+     "b0": [
+      0.6767,
+      0.6767,
+      0.8332
+     ],
+     "tbin": 2,
+     "pcombos": [
+      9,
+      9,
+      7
+     ],
+     "actions": [
+      "generate",
+      "L3",
+      "generate",
+      "verify"
+     ],
+     "obs": [
+      null,
+      false,
+      null,
+      1
+     ],
+     "beliefs": [
+      0.6767,
+      0.4038,
+      0.8332,
+      0.8332
+     ],
+     "patch": [
+      0,
+      1,
+      1,
+      2
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 74.0,
+     "mean_utility_first_action": 60.29
+    },
+    {
+     "first_action": "verify",
+     "n_tasks_with_this_first_action": 22,
+     "instance_id": "128",
+     "task_features": {
+      "diff_chars": "205",
+      "L1_lint": "1.0",
+      "t_log_len_statement": "4.532599493153256",
+      "t_log_len_tests": "5.327876168789581",
+      "t_n_public_tests": "3.0",
+      "tasklr": "1.4140803055548656",
+      "difficulty": "1.7041339465470513",
+      "combtask": "1.2651619140684918"
+     },
+     "bT": 0.7422,
+     "b0": [
+      0.9183,
+      0.7559,
+      0.8011
+     ],
+     "tbin": 0,
+     "pcombos": [
+      3,
+      7,
+      5
+     ],
+     "actions": [
+      "verify"
+     ],
+     "obs": [
+      1
+     ],
+     "beliefs": [
+      0.9183
+     ],
+     "patch": [
+      0
+     ],
+     "Y_fresh": [
+      1,
+      1,
+      1
+     ],
+     "utility": 95.0,
+     "mean_utility_first_action": 90.45
+    }
+   ]
+  }
+ ]
+}
