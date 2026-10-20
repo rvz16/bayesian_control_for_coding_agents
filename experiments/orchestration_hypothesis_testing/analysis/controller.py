@@ -226,7 +226,8 @@ def simulate_policy(traj: list[dict], policy_fn, cost: CostModel,
     return {"reward": reward, "cost": cum_cost,
             "utility": reward - cum_cost,
             "verified": state["verified"],
-            "n_actions": len(state["actions"])}
+            "n_actions": len(state["actions"]),
+            "actions": list(state["actions"])}
 
 
 # Baseline factories

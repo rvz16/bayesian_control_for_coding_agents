@@ -105,7 +105,15 @@ class GreedyController:
         return max(actions, key=lambda a: actions[a])
 
 
-def make_greedy_policy(controller: GreedyController):
+def make_greedy_policy(controller: GreedyController, *, reset_on_generate: bool = True):
+    """Wrap a GreedyController as a simulate_policy policy_fn.
+
+    `generate` moves to a fresh cached patch, so the belief restarts at the
+    prior (a retry is a fresh sample at the prior, as Q_generate assumes).
+    reset_on_generate=False keeps the previous patch's post-critic belief
+    across `generate` (the behaviour before this fix, used for the paper's BG
+    runs); pass --bg-legacy on the command line to get it.
+    """
     def _p(state, rec):
         b = state.get("belief", controller.prior)
         a = controller.select_action(b, state["step"])
@@ -121,6 +129,8 @@ def make_greedy_policy(controller: GreedyController):
             obs = bool(rec.get("L3_llm_review"))
             state["belief"] = controller._bayes_update(b, "L3_llm_review", obs)
             return "L3"
+        if a == "generate" and reset_on_generate:
+            state["belief"] = controller.prior
         return a
     return _p
 
@@ -187,6 +197,9 @@ def main() -> None:
     parser.add_argument("--out-suffix", default="",
                         help="Suffix appended to policy_comparison.json filename "
                              "(e.g. '_kernel_measured' to keep ablation runs separate).")
+    parser.add_argument("--bg-legacy", action="store_true",
+                        help="Keep Bayes-greedy's pre-fix behaviour: no belief reset on "
+                             "generate (reproduces the original BG runs).")
     args = parser.parse_args()
 
     out_dir = args.output_dir.resolve()
@@ -254,7 +267,7 @@ def main() -> None:
             "fixed_pipeline": policy_fixed_pipeline,
             f"best_of_{args.best_of}": policy_best_of_N(args.best_of),
             "bayesian_DP": make_bayesian_policy(dp),
-            "bayesian_greedy": make_greedy_policy(greedy),
+            "bayesian_greedy": make_greedy_policy(greedy, reset_on_generate=not args.bg_legacy),
         }
 
         # Run each policy on each instance
