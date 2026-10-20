@@ -5,8 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.24453-b31b1b.svg)](https://arxiv.org/abs/2606.24453)
+[![Talk](https://img.shields.io/badge/EMNLP_2026-oral_talk-red?logo=youtube)](https://www.youtube.com/watch?v=yCqiJuE5yfc)
 
-[Setup](#setup) | [Reproducing the paper](#reproducing-the-paper) | [Models & benchmarks](#models-and-benchmarks) | [Baseline policies](#baseline-policies) | [Citation](#citation)
+[Talk](#talk) | [Setup](#setup) | [Reproducing the paper](#reproducing-the-paper) | [Models & benchmarks](#models-and-benchmarks) | [Baseline policies](#baseline-policies) | [Citation](#citation)
 
 ---
 
@@ -19,6 +20,14 @@ equation of the underlying POMDP. This repository contains the calibration,
 policy, and evaluation code used to reproduce the empirical results across
 six generators and nine coding benchmarks, plus the uncertainty-quantification
 experiment with the SAGE agent.
+
+## Talk
+
+EMNLP 2026 oral presentation (8 min):
+
+<a href="https://www.youtube.com/watch?v=yCqiJuE5yfc">
+  <img src="https://img.youtube.com/vi/yCqiJuE5yfc/maxresdefault.jpg" width="640" alt="Bayesian Control for Coding Agents, EMNLP 2026 oral talk on YouTube">
+</a>
 
 ## Repository layout
 
