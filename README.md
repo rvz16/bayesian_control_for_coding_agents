@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![EMNLP 2026](https://img.shields.io/badge/EMNLP_2026-main-1f4e9a.svg)](https://aclanthology.org/2026.emnlp-main.1548/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.24453-b31b1b.svg)](https://arxiv.org/abs/2606.24453)
 [![Talk](https://img.shields.io/badge/EMNLP_2026-oral_talk-red?logo=youtube)](https://www.youtube.com/watch?v=yCqiJuE5yfc)
 
@@ -313,17 +314,32 @@ Utility for a policy π is `U(π) = R·Y_T − Σ_t C(a_t)` with `R=100`.
 
 ## Citation
 
-If you use this code in your research, please cite:
+If you use this code in your research, please cite the EMNLP 2026 paper
+([ACL Anthology](https://aclanthology.org/2026.emnlp-main.1548/),
+[PDF](https://aclanthology.org/2026.emnlp-main.1548.pdf); preprint: [arXiv:2606.24453](https://arxiv.org/abs/2606.24453)):
 
 ```bibtex
-@misc{bayesiancontrol2026,
-  title     = {Bayesian Control for Coding Agents},
-  author    = {Papamarkou, Theodore and Smirnov, Vladislav and Mazanov, Viktor and Vazhentsev, Artem and Nakov, Preslav and Baldwin, Timothy and Shelmanov, Artem},
-  booktitle = {Preprint},
-  year      = {2026},
-  eprint    = {2606.24453},
-  archivePrefix = {arXiv},
-  url       = {https://arxiv.org/pdf/2606.24453}
+@inproceedings{papamarkou-etal-2026-bayesian,
+    title = "{B}ayesian Control for Coding Agents",
+    author = "Papamarkou, Theodore  and
+      Smirnov, Vladislav  and
+      Mazanov, Viktor  and
+      Vazhentsev, Artem  and
+      Nakov, Preslav  and
+      Baldwin, Timothy  and
+      Shelmanov, Artem",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.1548/",
+    pages = "35299--35341",
+    ISBN = "979-8-89176-459-0"
 }
 ```
 

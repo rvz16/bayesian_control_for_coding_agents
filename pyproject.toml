@@ -31,7 +31,8 @@ keywords = [
 [project.urls]
 Homepage = "https://github.com/rvz16/bayesian_control_for_coding_agents"
 Repository = "https://github.com/rvz16/bayesian_control_for_coding_agents"
-Paper = "https://arxiv.org/abs/2606.24453"
+Paper = "https://aclanthology.org/2026.emnlp-main.1548/"
+Preprint = "https://arxiv.org/abs/2606.24453"
 
 [tool.setuptools.packages.find]
 where = ["."]

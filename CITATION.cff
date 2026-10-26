@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the EMNLP 2026 paper below."
+title: "Bayesian Control for Coding Agents (code)"
+repository-code: "https://github.com/rvz16/bayesian_control_for_coding_agents"
+license: MIT
+authors:
+  - family-names: Papamarkou
+    given-names: Theodore
+  - family-names: Smirnov
+    given-names: Vladislav
+  - family-names: Mazanov
+    given-names: Viktor
+  - family-names: Vazhentsev
+    given-names: Artem
+  - family-names: Nakov
+    given-names: Preslav
+  - family-names: Baldwin
+    given-names: Timothy
+  - family-names: Shelmanov
+    given-names: Artem
+preferred-citation:
+  type: conference-paper
+  title: "Bayesian Control for Coding Agents"
+  authors:
+    - family-names: Papamarkou
+      given-names: Theodore
+    - family-names: Smirnov
+      given-names: Vladislav
+    - family-names: Mazanov
+      given-names: Viktor
+    - family-names: Vazhentsev
+      given-names: Artem
+    - family-names: Nakov
+      given-names: Preslav
+    - family-names: Baldwin
+      given-names: Timothy
+    - family-names: Shelmanov
+      given-names: Artem
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  conference:
+    name: "EMNLP 2026"
+    city: "Budapest"
+    country: "HU"
+  publisher:
+    name: "Association for Computational Linguistics"
+  editors:
+    - family-names: Lee
+      given-names: Hung-Yi
+    - family-names: Dev
+      given-names: Sunipa
+    - family-names: Li
+      given-names: Jessy
+    - family-names: Elliott
+      given-names: Desmond
+  year: 2026
+  month: 10
+  start: 35299
+  end: 35341
+  isbn: "979-8-89176-459-0"
+  url: "https://aclanthology.org/2026.emnlp-main.1548/"
